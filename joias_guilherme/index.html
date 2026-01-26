@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Ggold | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a>
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+            <a href="correntes.html" class="btn-primary">Ver Coleção</a>
+        </div>
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551999902936" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong> 
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong> 
+                    <a href="https://wa.me/5599999999999" target="_blank">+55 99 99999-9999</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ggold Joias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

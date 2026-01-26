@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Brincos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <div class="page-header"><h2>Brincos</h2><p>Detalhes que iluminam</p></div>
+
+    <section class="product-grid">
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1402.jpg" alt="Conjunto">
+                <button class="btn-add-cart" onclick="addToCart('Conjunto Gota', 159.90, 'assents/IMG_1402.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Conjunto Gota Fusion</h3><span class="price">R$ 159,90</span></div>
+        </div>
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1417.jpg" alt="Brinco">
+                <button class="btn-add-cart" onclick="addToCart('Ponto de Luz', 69.90, 'assents/IMG_1417.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Brincos Ponto de Luz</h3><span class="price">R$ 69,90</span></div>
+        </div>
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1418.jpg" alt="Brinco">
+                <button class="btn-add-cart" onclick="addToCart('Conjunto Delicate', 89.90, 'assents/IMG_1418.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Conjunto Delicate</h3><span class="price">R$ 89,90</span></div>
+        </div>
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1419.jpg" alt="Brinco">
+                <button class="btn-add-cart" onclick="addToCart('Trio Zircônia', 120.00, 'assents/IMG_1419.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Trio Zircônia</h3><span class="price">R$ 120,00</span></div>
+        </div>
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1420.jpg" alt="Brinco">
+                <button class="btn-add-cart" onclick="addToCart('Argolinhas', 110.00, 'assents/IMG_1420.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Trio Argolinhas</h3><span class="price">R$ 110,00</span></div>
+        </div>
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1427.jpg" alt="Brinco">
+                <button class="btn-add-cart" onclick="addToCart('Conjunto Cruz', 140.00, 'assents/IMG_1427.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Conjunto Cruz</h3><span class="price">R$ 140,00</span></div>
+        </div>
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551999902936" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

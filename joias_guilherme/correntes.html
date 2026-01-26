@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes Masculinas</a>
+        <a href="correntes.html">Correntes Femininas</a>
+        <a href="pulseiras.html">Pulseiras</a>
+        <a href="correntes.html">Escapulários</a>
+        <a href="brincos.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <div class="page-header">
+        <h2>Correntes</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1409.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Trio', 189.90, 'assents/IMG_1409.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Veneziana Trio</h3><span class="price">R$ 189,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1387.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Letra I', 149.90, 'assents/IMG_1387.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Letra I</h3><span class="price">R$ 149,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1389.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Placa Lisa', 169.90, 'assents/IMG_1389.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Placa Lisa</h3><span class="price">R$ 169,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1390.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mix 4 Correntes', 399.90, 'assents/IMG_1390.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mix Mostruário 1</h3><span class="price">R$ 399,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1391.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mix Placas', 350.00, 'assents/IMG_1391.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mix Placas</h3><span class="price">R$ 350,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1398.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Dupla', 210.00, 'assents/IMG_1398.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Dupla</h3><span class="price">R$ 210,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1403.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Malha', 199.90, 'assents/IMG_1403.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Malha</h3><span class="price">R$ 199,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1404.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Torcida', 179.90, 'assents/IMG_1404.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Torcida</h3><span class="price">R$ 179,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1405.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Fina', 129.90, 'assents/IMG_1405.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Fina</h3><span class="price">R$ 129,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1406.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Ponto de Luz', 139.90, 'assents/IMG_1406.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Ponto de Luz</h3><span class="price">R$ 139,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1407.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Gota', 145.00, 'assents/IMG_1407.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Gota</h3><span class="price">R$ 145,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1408.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Bolinhas', 155.00, 'assents/IMG_1408.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Bolinhas</h3><span class="price">R$ 155,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1410.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mix Delicado', 220.00, 'assents/IMG_1410.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mix Delicado</h3><span class="price">R$ 220,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1411.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Mini', 110.00, 'assents/IMG_1411.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Mini</h3><span class="price">R$ 110,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1412.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mix Olho Grego', 249.90, 'assents/IMG_1412.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mix Olho Grego</h3><span class="price">R$ 249,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1414.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Colar Azul', 189.00, 'assents/IMG_1414.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Colar Azul</h3><span class="price">R$ 189,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1415.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mix Azul', 230.00, 'assents/IMG_1415.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mix Azul</h3><span class="price">R$ 230,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1422.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Elo Longo', 210.00, 'assents/IMG_1422.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Elo Longo</h3><span class="price">R$ 210,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1423.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Placa', 240.00, 'assents/IMG_1423.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Escapulário Placa</h3><span class="price">R$ 240,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1424.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Elo Fino', 160.00, 'assents/IMG_1424.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Elo Fino</h3><span class="price">R$ 160,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1425.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet', 199.90, 'assents/IMG_1425.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Grumet</h3><span class="price">R$ 199,90</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1426.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cruz', 170.00, 'assents/IMG_1426.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Cruz</h3><span class="price">R$ 170,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1429.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grossa', 250.00, 'assents/IMG_1429.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Grossa</h3><span class="price">R$ 250,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1430.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Crucifixo', 180.00, 'assents/IMG_1430.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Crucifixo</h3><span class="price">R$ 180,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1431.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier', 195.00, 'assents/IMG_1431.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Cartier</h3><span class="price">R$ 195,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1433.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cruz Fina', 150.00, 'assents/IMG_1433.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Cruz Fina</h3><span class="price">R$ 150,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1434.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Ouro', 210.00, 'assents/IMG_1434.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Ouro</h3><span class="price">R$ 210,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1435.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Veneziana', 175.00, 'assents/IMG_1435.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Corrente Veneziana</h3><span class="price">R$ 175,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1437.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mostruário Letras 1', 400.00, 'assents/IMG_1437.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mostruário Letras 1</h3><span class="price">R$ 400,00</span></div>
+        </div>
+
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="assents/IMG_1438.jpg" alt="Joia">
+                <button class="btn-add-cart" onclick="addToCart('Mostruário Letras 2', 400.00, 'assents/IMG_1438.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info"><h3>Mostruário Letras 2</h3><span class="price">R$ 400,00</span></div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551999902936" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
