@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Braceletes</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 4566 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-2-bolinhas-pequenas-ajustavel-1716401126.9259.jpg" alt="Bracelete Liso com 2 Bolinhas Peq" onclick="openProductModal('4566', 'Bracelete Liso com 2 Bolinhas Peq', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-2-bolinhas-pequenas-ajustavel-1716401126.9259.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Liso com 2 Bolinhas Peq', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-2-bolinhas-pequenas-ajustavel-1716401126.9259.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4566">
+                <h3>Bracelete Liso com 2 Bolinhas Peq</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 2590 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-torcido-ajustavel-1727357180.4265.jpg" alt="Bracelete Tubo Torcido Ajustavel" onclick="openProductModal('2590', 'Bracelete Tubo Torcido Ajustavel', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-torcido-ajustavel-1727357180.4265.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Tubo Torcido Ajustavel', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-torcido-ajustavel-1727357180.4265.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2590">
+                <h3>Bracelete Tubo Torcido Ajustavel</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 1047 (2 imagens - COM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1047">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-argolas-1747312573.1507.jpg" alt="Bracelete Liso com Argolas" onclick="openImageLightboxDirect(this.src)">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-argolas-1707929623.5642.jpg" alt="Bracelete Liso com Argolas" onclick="openImageLightboxDirect(this.src)">
+                    </div>
+                    <button class="carousel-nav prev" onclick="moveCarousel('carousel-1047', -1)">‹</button>
+                    <button class="carousel-nav next" onclick="moveCarousel('carousel-1047', 1)">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Liso com Argolas', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-liso-com-argolas-1747312573.1507.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1047">
+                <h3>Bracelete Liso com Argolas</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 1188 (2 imagens - COM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1188">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-trabalhado-com-argolas-ouro-18k-1707320513.6798.jpg" alt="Bracelete Trabalhado com Argolas" onclick="openImageLightboxDirect(this.src)">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-trabalhado-com-argolas-ouro-18k-1707929558.8111.jpg" alt="Bracelete Trabalhado com Argolas" onclick="openImageLightboxDirect(this.src)">
+                    </div>
+                    <button class="carousel-nav prev" onclick="moveCarousel('carousel-1188', -1)">‹</button>
+                    <button class="carousel-nav next" onclick="moveCarousel('carousel-1188', 1)">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Trabalhado com Argolas', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-trabalhado-com-argolas-ouro-18k-1707320513.6798.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1188">
+                <h3>Bracelete Trabalhado com Argolas</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 1483 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-1-carreira-de-zirconias-cristais-1758219798.0823.jpg" alt="Bracelete Carreira de Zirconias Cristais" onclick="openProductModal('1483', 'Bracelete Carreira de Zirconias Cristais', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-1-carreira-de-zirconias-cristais-1758219798.0823.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Carreira de Zirconias Cristais', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-1-carreira-de-zirconias-cristais-1758219798.0823.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1483">
+                <h3>Bracelete Carreira de Zirconias Cristais</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 6214 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-grosso-liso-com-fecho-click-1747053434.604.jpg" alt="Bracelete Tubo Grosso Liso" onclick="openProductModal('6214', 'Bracelete Tubo Grosso Liso', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-grosso-liso-com-fecho-click-1747053434.604.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Tubo Grosso Liso', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-grosso-liso-com-fecho-click-1747053434.604.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6214">
+                <h3>Bracelete Tubo Grosso Liso</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 3853 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-com-fecho-1747053544.3502.png" alt="Bracelete Tubo Liso" onclick="openProductModal('3853', 'Bracelete Tubo Liso', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-com-fecho-1747053544.3502.png')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Tubo Liso', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-com-fecho-1747053544.3502.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3853">
+                <h3>Bracelete Tubo Liso</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 5022 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-inspiracao-cravejado-com-zirconias-1727357578.7139.jpg" alt="Bracelete Inspiração Cravejado Zirconia" onclick="openProductModal('5022', 'Bracelete Inspiração Cravejado Zirconia', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-inspiracao-cravejado-com-zirconias-1727357578.7139.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Inspiração Cravejado Zirconia', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-inspiracao-cravejado-com-zirconias-1727357578.7139.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5022">
+                <h3>Bracelete Inspiração Cravejado Zirconia</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 5735 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-zirconias-entrelacadas-1737397722.9952.jpg" alt="Bracelete Zirconias Entrelaçadas" onclick="openProductModal('5735', 'Bracelete Zirconias Entrelaçadas', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-zirconias-entrelacadas-1737397722.9952.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Zirconias Entrelaçadas', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-zirconias-entrelacadas-1737397722.9952.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5735">
+                <h3>Bracelete Zirconias Entrelaçadas</h3>
+                <span class="price">R$ 229,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 3467 (2 imagens - COM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-3467">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-martelado-medio-1707320800.0028.jpg" alt="Bracelete Martelado Medio Ajustavel" onclick="openImageLightboxDirect(this.src)">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-martelado-medio-1708617671.8684.jpg" alt="Bracelete Martelado Medio Ajustavel" onclick="openImageLightboxDirect(this.src)">
+                    </div>
+                    <button class="carousel-nav prev" onclick="moveCarousel('carousel-3467', -1)">‹</button>
+                    <button class="carousel-nav next" onclick="moveCarousel('carousel-3467', 1)">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Martelado Medio Ajustavel', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-martelado-medio-1707320800.0028.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3467">
+                <h3>Bracelete Martelado Medio Ajustavel</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 250 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-6-carreiras-cravejado-com-zirconias-1692126656.317.jpg" alt="Bracelete 6 Carreiras Cravejadas Zirconia" onclick="openProductModal('250', 'Bracelete 6 Carreiras Cravejadas Zirconia', 249.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-6-carreiras-cravejado-com-zirconias-1692126656.317.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete 6 Carreiras Cravejadas Zirconia', 249.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-6-carreiras-cravejado-com-zirconias-1692126656.317.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="250">
+                <h3>Bracelete 6 Carreiras Cravejadas Zirconia</h3>
+                <span class="price">R$ 249,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 3721 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-replica-com-3-trevos-cravejados-1707320893.0906.jpg" alt="Bracelete Inspiração com 3 Trevos Cravejados" onclick="openProductModal('3721', 'Bracelete Inspiração com 3 Trevos Cravejados', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-replica-com-3-trevos-cravejados-1707320893.0906.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Inspiração com 3 Trevos Cravejados', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-replica-com-3-trevos-cravejados-1707320893.0906.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3721">
+                <h3>Bracelete Inspiração com 3 Trevos Cravejados</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 4707 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-prego-liso-1727357374.4493.jpg" alt="Bracelete Prego Liso" onclick="openProductModal('4707', 'Bracelete Prego Liso', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-prego-liso-1727357374.4493.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Prego Liso', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-prego-liso-1727357374.4493.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4707">
+                <h3>Bracelete Prego Liso</h3>
+                <span class="price">R$ 239,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 4756 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-oval-fosco-1727797538.7757.jpg" alt="Bracelete Oval Fosco" onclick="openProductModal('4756', 'Bracelete Oval Fosco', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-oval-fosco-1727797538.7757.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Oval Fosco', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-oval-fosco-1727797538.7757.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4756">
+                <h3>Bracelete Oval Fosco</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 5282 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-ajustavel-tubo-trancado-1737398602.2479.jpg" alt="Bracelete Tubo Trançado" onclick="openProductModal('5282', 'Bracelete Tubo Trançado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-ajustavel-tubo-trancado-1737398602.2479.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Tubo Trançado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-ajustavel-tubo-trancado-1737398602.2479.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5282">
+                <h3>Bracelete Tubo Trançado</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 4205 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-pingente-olho-grego-ouro-18k-1740666689.9745.jpg" alt="Bracelete Olho Grego" onclick="openProductModal('4205', 'Bracelete Olho Grego', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-pingente-olho-grego-ouro-18k-1740666689.9745.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Olho Grego', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-pingente-olho-grego-ouro-18k-1740666689.9745.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4205">
+                <h3>Bracelete Olho Grego</h3>
+                <span class="price">R$ 149,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 85 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-diamantado-4mm-1747311315.4472.jpg" alt="Bracelete Diamantado 4mm" onclick="openProductModal('85', 'Bracelete Diamantado 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-diamantado-4mm-1747311315.4472.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Diamantado 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-diamantado-4mm-1747311315.4472.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="85">
+                <h3>Bracelete Diamantado 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 295 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-grosso-com-fecho-click-1748869469.6616.jpg" alt="Bracelete Tubo Liso Grosso Fecho Click" onclick="openProductModal('295', 'Bracelete Tubo Liso Grosso Fecho Click', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-grosso-com-fecho-click-1748869469.6616.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Tubo Liso Grosso Fecho Click', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-tubo-liso-grosso-com-fecho-click-1748869469.6616.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="295">
+                <h3>Bracelete Tubo Liso Grosso Fecho Click</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 275 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-coracoes-cravacao-inglesa-1755715197.5671.jpg" alt="Bracelete Corações Cravação Inglesa" onclick="openProductModal('275', 'Bracelete Corações Cravação Inglesa', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-coracoes-cravacao-inglesa-1755715197.5671.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Corações Cravação Inglesa', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-com-coracoes-cravacao-inglesa-1755715197.5671.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="275">
+                <h3>Bracelete Corações Cravação Inglesa</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 6697 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-cravejado-em-zirconias-com-filetes-lisos-1755715245.4252.jpg" alt="Bracelete Cravejado com Zirconias com Filetes Liso" onclick="openProductModal('6697', 'Bracelete Cravejado com Zirconias com Filetes Liso', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-cravejado-em-zirconias-com-filetes-lisos-1755715245.4252.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Bracelete Cravejado com Zirconias com Filetes Liso', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-cravejado-em-zirconias-com-filetes-lisos-1755715245.4252.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6697">
+                <h3>Bracelete Cravejado com Zirconias com Filetes Liso</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

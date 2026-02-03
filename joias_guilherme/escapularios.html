@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Escapulários</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 2322 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2322">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-fe-1690916006.3567.jpg" alt="Escapulário Cadeado Alongado Fé">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-alongado-fe-1761153762.4784.jpg" alt="Escapulário Cadeado Alongado Fé">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Cadeado Alongado Fé', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-fe-1690916006.3567.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2322">
+                <h3>Escapulário Cadeado Alongado Fé</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 2285 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2285">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-alongado-sao-jorge-1690916408.1646.jpg" alt="Escapulário Cadeado Alongado São Jorge">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-alongado-sao-jorge-1762546773.089.jpg" alt="Escapulário Cadeado Alongado São Jorge">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Cadeado Alongado São Jorge', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-alongado-sao-jorge-1690916408.1646.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2285">
+                <h3>Escapulário Cadeado Alongado São Jorge</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 2256 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2256">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-nossa-senhora-do-carmo-e-nossa-senhora-aparecida-1690916551.9495.jpg" alt="Escapulário Tijolinho Nossa Senhora">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-nossa-senhora-do-carmo-e-nossa-senhora-aparecida-1762546749.6374.jpg" alt="Escapulário Tijolinho Nossa Senhora">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Tijolinho Nossa Senhora', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-nossa-senhora-do-carmo-e-nossa-senhora-aparecida-1690916551.9495.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2256">
+                <h3>Escapulário Tijolinho Nossa Senhora</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 2258 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2258">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-jesus-e-maria-1690916699.8139.jpg" alt="Escapulário Tijolinho Jesus e Maria">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-jesus-e-maria-1761153542.5214.jpg" alt="Escapulário Tijolinho Jesus e Maria">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Tijolinho Jesus e Maria', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-jesus-e-maria-1690916699.8139.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2258">
+                <h3>Escapulário Tijolinho Jesus e Maria</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 2281 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2281">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-elo-tijolinho-pomba-da-paz-e-cruz-1690918122.7103.jpg" alt="Escapulário Tijolinho Espírito Santo e Cruz">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-elo-tijolinho-espirito-santo-e-cruz-1761153701.7475.jpg" alt="Escapulário Tijolinho Espírito Santo e Cruz">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Tijolinho Espírito Santo e Cruz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-elo-tijolinho-pomba-da-paz-e-cruz-1690918122.7103.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2281">
+                <h3>Escapulário Tijolinho Espírito Santo e Cruz</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 2325 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2325">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-estrela-de-davi-1690918261.8484.jpg" alt="Escapulário Cadeado Estrela de Davi">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-estrela-de-davi-1761153818.5626.jpg" alt="Escapulário Cadeado Estrela de Davi">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Cadeado Estrela de Davi', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-estrela-de-davi-1690918261.8484.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2325">
+                <h3>Escapulário Cadeado Estrela de Davi</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 2321 (3 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2321">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-elo-longo-nossa-senhora-e-ave-maria-1736359653.4462.jpg" alt="Escapulário Grumet Nossa Senhora e Ave Maria">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-elo-longo-nossa-senhora-e-ave-maria-1736359653.8604.jpg" alt="Escapulário Grumet Nossa Senhora e Ave Maria">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-elo-longo-nossa-senhora-e-ave-maria-1761153731.4038.jpg" alt="Escapulário Grumet Nossa Senhora e Ave Maria">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Grumet Nossa Senhora e Ave Maria', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-elo-longo-nossa-senhora-e-ave-maria-1736359653.4462.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2321">
+                <h3>Escapulário Grumet Nossa Senhora e Ave Maria</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 4700 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-4700">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-jesus-cristo-em-relevo-1716990423.3297.jpg" alt="Escapulário Cadeado Jesus Cristo Relevo">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-jesus-cristo-em-relevo-1762546798.0603.jpg" alt="Escapulário Cadeado Jesus Cristo Relevo">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Cadeado Jesus Cristo Relevo', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-cadeado-jesus-cristo-em-relevo-1716990423.3297.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4700">
+                <h3>Escapulário Cadeado Jesus Cristo Relevo</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 5058 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-5058">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-sao-jorge-borda-detalhada-1727784070.9298.jpg" alt="Escapulário Tijolinho São Jorge Borda">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-sao-jorge-borda-detalhada-1762546825.5734.jpg" alt="Escapulário Tijolinho São Jorge Borda">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Tijolinho São Jorge Borda', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-tijolinho-sao-jorge-borda-detalhada-1727784070.9298.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5058">
+                <h3>Escapulário Tijolinho São Jorge Borda</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 6351 (3 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-6351">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-maria-e-jesus-cristo-1750450444.6453.jpg" alt="Escapulário Grumet Maria e Jesus Cristo 2 Face">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-maria-e-jesus-cristo-1750450445.1541.jpg" alt="Escapulário Grumet Maria e Jesus Cristo 2 Face">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-maria-e-jesus-cristo-duas-faces-1761154321.0403.jpg" alt="Escapulário Grumet Maria e Jesus Cristo 2 Face">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Grumet Maria e Jesus Cristo 2 Face', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-maria-e-jesus-cristo-1750450444.6453.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6351">
+                <h3>Escapulário Grumet Maria e Jesus Cristo 2 Face</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 6357 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-6357">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-jesus-e-maria-1748875671.4274.jpg" alt="Escapulário Grumet Jesus e Maria">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-jesus-e-maria-1761154427.6498.jpg" alt="Escapulário Grumet Jesus e Maria">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Grumet Jesus e Maria', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-jesus-e-maria-1748875671.4274.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6357">
+                <h3>Escapulário Grumet Jesus e Maria</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 6740 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-6740">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-sao-jorge-1756304219.9255.jpg" alt="Escapulário Grumet São Jorge">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-sao-jorge-1762453491.0054.jpg" alt="Escapulário Grumet São Jorge">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Grumet São Jorge', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-sao-jorge-1756304219.9255.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6740">
+                <h3>Escapulário Grumet São Jorge</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 4521 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-nossa-senhora-cravejado-ouro-18k-1717685826.4352.jpg" alt="Escapulário Veneziana Nossa Senhora Cravejado">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Veneziana Nossa Senhora Cravejado', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-nossa-senhora-cravejado-ouro-18k-1717685826.4352.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4521">
+                <h3>Escapulário Veneziana Nossa Senhora Cravejado</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 5845 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-jesus-e-nossa-senhora-do-carmo-com-pontos-de-zirconias-1737737194.7358.jpg" alt="Escapulário Veneziana Jesus e Nossa Senhora com Zircônias">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Veneziana Jesus e Nossa Senhora com Zircônias', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-jesus-e-nossa-senhora-do-carmo-com-pontos-de-zirconias-1737737194.7358.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5845">
+                <h3>Escapulário Veneziana Jesus e Nossa Senhora com Zircônias</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 4692 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-feminino-pingente-jesus-e-maria-1739475888.4611.jpg" alt="Escapulário Veneziana Pingente Jesus e Maria">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Veneziana Pingente Jesus e Maria', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-feminino-pingente-jesus-e-maria-1739475888.4611.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4692">
+                <h3>Escapulário Veneziana Pingente Jesus e Maria</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 5846 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-pingente-nossa-senhora-cravejado-nas-laterais-1748869138.7212.jpg" alt="Escapulário Veneziana Pingente Nossa Senhora Cravejado">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Veneziana Pingente Nossa Senhora Cravejado', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-pingente-nossa-senhora-cravejado-nas-laterais-1748869138.7212.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5846">
+                <h3>Escapulário Veneziana Pingente Nossa Senhora Cravejado</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 4264 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-coracao-cravejado-nossa-senhora-e-espirito-santo-ouro-18k-1717604728.2065.jpg" alt="Escapulário Veneziana Coração Cravejado Nossa Senhora e Espírito Santo">
+                <button class="btn-add-cart" onclick="addToCart('Escapulário Veneziana Coração Cravejado Nossa Senhora e Espírito Santo', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-veneziana-coracao-cravejado-nossa-senhora-e-espirito-santo-ouro-18k-1717604728.2065.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4264">
+                <h3>Escapulário Veneziana Coração Cravejado Nossa Senhora e Espírito Santo</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

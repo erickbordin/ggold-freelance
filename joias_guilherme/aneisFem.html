@@ -1,0 +1,607 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ggold | Brincos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+            
+            <nav class="desktop-nav">
+                <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                    <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+            <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                    <span>Pulseiras</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                    <span>Anéis</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="aneis-mobile" class="mobile-dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </div>
+
+        <section class="mini-hero">
+            <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+            <div class="hero-content">
+                <h1>GGOLD JOIAS</h1>
+                <p>Elegância em cada detalhe.</p>
+            </div>
+        </section>
+
+        <div class="page-header"><h2>Anéis Femininos</h2><p>Detalhes que iluminam</p></div>
+
+        <section class="product-grid">
+            <!-- Produto 1 - REF: 2441 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-cobra-cravejado-com-zirconias-ajustavel-1693511110.7491.jpg" alt="Anel Inspiração Cobra Cravejado" onclick="openProductModal('2441', 'Anel Inspiração Cobra Cravejado', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-cobra-cravejado-com-zirconias-ajustavel-1693511110.7491.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Inspiração Cobra Cravejado', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-cobra-cravejado-com-zirconias-ajustavel-1693511110.7491.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="2441">
+                    <h3>Anel Inspiração Cobra Cravejado</h3>
+                    <span class="price">R$ 139,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 2 - REF: 1944 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-geometrico-cravejado-com-zirconias-1693510874.8029.jpg" alt="Anel Geometrico Cravejado com Zirconias" onclick="openProductModal('1944', 'Anel Geometrico Cravejado com Zirconias', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-geometrico-cravejado-com-zirconias-1693510874.8029.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Geometrico Cravejado com Zirconias', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-geometrico-cravejado-com-zirconias-1693510874.8029.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="1944">
+                    <h3>Anel Geometrico Cravejado com Zirconias</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 3 - REF: 1929 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-chuveirinho-cravejado-1694521628.7469.jpg" alt="Anel Chuveirinho Cravejado Alto" onclick="openProductModal('1929', 'Anel Chuveirinho Cravejado Alto', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-chuveirinho-cravejado-1694521628.7469.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Chuveirinho Cravejado Alto', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-chuveirinho-cravejado-1694521628.7469.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="1929">
+                    <h3>Anel Chuveirinho Cravejado Alto</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 4 - REF: 860 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-infinito-liso-ouro-18k-1694520612.5611.png" alt="Anel Infinito Liso" onclick="openProductModal('860', 'Anel Infinito Liso', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-infinito-liso-ouro-18k-1694520612.5611.png')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Infinito Liso', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-infinito-liso-ouro-18k-1694520612.5611.png')">Adicionar</button>
+                </div>
+                <div class="product-info" id="860">
+                    <h3>Anel Infinito Liso</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 5 - REF: 2086 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-ponto-de-zirconia-1711550181.7193.jpg" alt="Anel Quadrado Ponto de Luz" onclick="openProductModal('2086', 'Anel Quadrado Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-ponto-de-zirconia-1711550181.7193.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Quadrado Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-ponto-de-zirconia-1711550181.7193.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="2086">
+                    <h3>Anel Quadrado Ponto de Luz</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 6 - REF: 875 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-tradicional-1746202324.6883.jpg" alt="Anel Solitario Tradicional" onclick="openProductModal('875', 'Anel Solitario Tradicional', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-tradicional-1746202324.6883.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Solitario Tradicional', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-tradicional-1746202324.6883.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="875">
+                    <h3>Anel Solitario Tradicional</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 7 - REF: 5958 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-ponto-de-luz-pequeno-1746202438.6612.jpg" alt="Anel Ponto de Luz Pequeno" onclick="openProductModal('5958', 'Anel Ponto de Luz Pequeno', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-ponto-de-luz-pequeno-1746202438.6612.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Ponto de Luz Pequeno', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-ponto-de-luz-pequeno-1746202438.6612.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5958">
+                    <h3>Anel Ponto de Luz Pequeno</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 8 - REF: 866 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-liso-com-mini-coracoes-1719491634.2172.jpg" alt="Anel Liso com Mini Corações" onclick="openProductModal('866', 'Anel Liso com Mini Corações', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-liso-com-mini-coracoes-1719491634.2172.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Liso com Mini Corações', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-liso-com-mini-coracoes-1719491634.2172.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="866">
+                    <h3>Anel Liso com Mini Corações</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 9 - REF: 4895 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-elos-coracoes-lisos--1731355704.2357.jpg" alt="Anel Corações Lisos" onclick="openProductModal('4895', 'Anel Corações Lisos', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-elos-coracoes-lisos--1731355704.2357.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Corações Lisos', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-elos-coracoes-lisos--1731355704.2357.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="4895">
+                    <h3>Anel Corações Lisos</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 10 - REF: 5956 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-7-zirconias-brancas-1746202498.2896.jpg" alt="Anel Aparador com 7 Zirconias Brancas" onclick="openProductModal('5956', 'Anel Aparador com 7 Zirconias Brancas', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-7-zirconias-brancas-1746202498.2896.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Aparador com 7 Zirconias Brancas', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-7-zirconias-brancas-1746202498.2896.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5956">
+                    <h3>Anel Aparador com 7 Zirconias Brancas</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 11 - REF: 856 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-com-cravejado-com-zirconias-1719410936.5404.jpg" alt="Anel Solitario com Zirconia" onclick="openProductModal('856', 'Anel Solitario com Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-com-cravejado-com-zirconias-1719410936.5404.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Solitario com Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-com-cravejado-com-zirconias-1719410936.5404.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="856">
+                    <h3>Anel Solitario com Zirconia</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 12 - REF: 2939 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-coracao-vazado-1719410338.1517.jpg" alt="Anel Coração Vazado" onclick="openProductModal('2939', 'Anel Coração Vazado', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-coracao-vazado-1719410338.1517.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Coração Vazado', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-coracao-vazado-1719410338.1517.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="2939">
+                    <h3>Anel Coração Vazado</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 13 - REF: 4401 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-cravejado-com-zirconias-1719410160.3078.jpg" alt="Anel Inspiração V Cravejado com Zirconias" onclick="openProductModal('4401', 'Anel Inspiração V Cravejado com Zirconias', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-cravejado-com-zirconias-1719410160.3078.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Inspiração V Cravejado com Zirconias', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-cravejado-com-zirconias-1719410160.3078.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="4401">
+                    <h3>Anel Inspiração V Cravejado com Zirconias</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 14 - REF: 5957 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-grande-1746202259.3369.jpg" alt="Anel Solitario Grande" onclick="openProductModal('5957', 'Anel Solitario Grande', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-grande-1746202259.3369.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Solitario Grande', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-solitario-grande-1746202259.3369.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5957">
+                    <h3>Anel Solitario Grande</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 15 - REF: 5497 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-formato-prego-liso-1746202622.328.jpg" alt="Anel Formato Prego Liso" onclick="openProductModal('5497', 'Anel Formato Prego Liso', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-formato-prego-liso-1746202622.328.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Formato Prego Liso', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-formato-prego-liso-1746202622.328.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5497">
+                    <h3>Anel Formato Prego Liso</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 16 - REF: 1932 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-1-fileira-de-zirconia-1711549063.1309.jpg" alt="Anel Abaulado 1 Fileira de Zirconia" onclick="openProductModal('1932', 'Anel Abaulado 1 Fileira de Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-1-fileira-de-zirconia-1711549063.1309.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Abaulado 1 Fileira de Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-1-fileira-de-zirconia-1711549063.1309.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="1932">
+                    <h3>Anel Abaulado 1 Fileira de Zirconia</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 17 - REF: 5944 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-3-fileiras-de-zirconias-1746202555.6957.jpg" alt="Anel Abaulado 3 Fileira de Zirconia" onclick="openProductModal('5944', 'Anel Abaulado 3 Fileira de Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-3-fileiras-de-zirconias-1746202555.6957.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Abaulado 3 Fileira de Zirconia', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-abaulado-3-fileiras-de-zirconias-1746202555.6957.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5944">
+                    <h3>Anel Abaulado 3 Fileira de Zirconia</h3>
+                    <span class="price">R$ 119,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 18 - REF: 3983 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-2-carreiras-de-zirconias-negras-1711546669.1817.jpg" alt="Anel Aparador com 2 Carreiras de Zirconias Negras" onclick="openProductModal('3983', 'Anel Aparador com 2 Carreiras de Zirconias Negras', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-2-carreiras-de-zirconias-negras-1711546669.1817.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Aparador com 2 Carreiras de Zirconias Negras', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-2-carreiras-de-zirconias-negras-1711546669.1817.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3983">
+                    <h3>Anel Aparador com 2 Carreiras de Zirconias Negras</h3>
+                    <span class="price">R$ 129,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 19 - REF: 2000 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-meia-alianca-cravejada-com-zirconias-1711550210.9822.jpg" alt="Anel Meia Aliança Cravejada" onclick="openProductModal('2000', 'Anel Meia Aliança Cravejada', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-meia-alianca-cravejada-com-zirconias-1711550210.9822.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Meia Aliança Cravejada', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-meia-alianca-cravejada-com-zirconias-1711550210.9822.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="2000">
+                    <h3>Anel Meia Aliança Cravejada</h3>
+                    <span class="price">R$ 129,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 20 - REF: 6207 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-liso-1746217314.6409.jpg" alt="Anel Entrelaçado Liso" onclick="openProductModal('6207', 'Anel Entrelaçado Liso', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-liso-1746217314.6409.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Entrelaçado Liso', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-liso-1746217314.6409.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="6207">
+                    <h3>Anel Entrelaçado Liso</h3>
+                    <span class="price">R$ 129,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 21 - REF: 5459 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-simbolo-do-infinito-liso-1738095546.9627.jpg" alt="Anel Simbolo do Infinito Liso" onclick="openProductModal('5459', 'Anel Simbolo do Infinito Liso', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-simbolo-do-infinito-liso-1738095546.9627.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Simbolo do Infinito Liso', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-simbolo-do-infinito-liso-1738095546.9627.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5459">
+                    <h3>Anel Simbolo do Infinito Liso</h3>
+                    <span class="price">R$ 129,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 22 - REF: 3213 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-v-ouro-18k--1741705622.52.jpg" alt="Anel Tradicional Letra V" onclick="openProductModal('3213', 'Anel Tradicional Letra V', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-v-ouro-18k--1741705622.52.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra V', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-v-ouro-18k--1741705622.52.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3213">
+                    <h3>Anel Tradicional Letra V</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 23 - REF: 3081 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-b-1713275523.2102.jpg" alt="Anel Tradicional Letra B" onclick="openProductModal('3081', 'Anel Tradicional Letra B', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-b-1713275523.2102.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra B', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-b-1713275523.2102.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3081">
+                    <h3>Anel Tradicional Letra B</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 24 - REF: 3079 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-r-1721849961.6945.jpg" alt="Anel Tradicional Letra R" onclick="openProductModal('3079', 'Anel Tradicional Letra R', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-r-1721849961.6945.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra R', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-r-1721849961.6945.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3079">
+                    <h3>Anel Tradicional Letra R</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 25 - REF: 3092 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-l-1721849850.9881.jpg" alt="Anel Tradicional Letra L" onclick="openProductModal('3092', 'Anel Tradicional Letra L', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-l-1721849850.9881.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra L', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-l-1721849850.9881.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3092">
+                    <h3>Anel Tradicional Letra L</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 26 - REF: 3097 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-p-1721849798.1736.jpg" alt="Anel Tradicional Letra P" onclick="openProductModal('3097', 'Anel Tradicional Letra P', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-p-1721849798.1736.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra P', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-p-1721849798.1736.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3097">
+                    <h3>Anel Tradicional Letra P</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 27 - REF: 3088 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg" alt="Anel Tradicional Letra G" onclick="openProductModal('3088', 'Anel Tradicional Letra G', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra G', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3088">
+                    <h3>Anel Tradicional Letra G</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 28 - REF: 3084 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg" alt="Anel Tradicional Letra M" onclick="openProductModal('3084', 'Anel Tradicional Letra M', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra M', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-g-1721849714.2647.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3084">
+                    <h3>Anel Tradicional Letra M</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 29 - REF: 3089 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-h-1721849587.7836.jpg" alt="Anel Tradicional Letra H" onclick="openProductModal('3089', 'Anel Tradicional Letra H', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-h-1721849587.7836.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra H', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-h-1721849587.7836.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3089">
+                    <h3>Anel Tradicional Letra H</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 30 - REF: 3091 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-j-1721913954.1319.jpg" alt="Anel Tradicional Letra J" onclick="openProductModal('3091', 'Anel Tradicional Letra J', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-j-1721913954.1319.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra J', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-j-1721913954.1319.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3091">
+                    <h3>Anel Tradicional Letra J</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 31 - REF: 3090 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-i-1721914013.8549.jpg" alt="Anel Tradicional Letra I" onclick="openProductModal('3090', 'Anel Tradicional Letra I', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-i-1721914013.8549.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra I', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-i-1721914013.8549.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3090">
+                    <h3>Anel Tradicional Letra I</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 32 - REF: 3082 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-c-1721913989.3091.jpg" alt="Anel Tradicional Letra C" onclick="openProductModal('3082', 'Anel Tradicional Letra C', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-c-1721913989.3091.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra C', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-c-1721913989.3091.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3082">
+                    <h3>Anel Tradicional Letra C</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 33 - REF: 3093 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-s-1721914093.2762.jpg" alt="Anel Tradicional Letra S" onclick="openProductModal('3093', 'Anel Tradicional Letra S', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-s-1721914093.2762.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Tradicional Letra S', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-tradicional-letra-s-1721914093.2762.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3093">
+                    <h3>Anel Tradicional Letra S</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 34 - REF: 5466 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-borboleta-cravejado-com-zirconias-1746201942.407.jpg" alt="Anel Borboleta Cravejado com Zirconias" onclick="openProductModal('5466', 'Anel Borboleta Cravejado com Zirconias', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-borboleta-cravejado-com-zirconias-1746201942.407.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Borboleta Cravejado com Zirconias', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-borboleta-cravejado-com-zirconias-1746201942.407.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5466">
+                    <h3>Anel Borboleta Cravejado com Zirconias</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 35 - REF: 2844 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-cravejado-com-zirconias-1719410417.0536.jpg" alt="Anel Entrelaçado Cravejado com Zirconias" onclick="openProductModal('2844', 'Anel Entrelaçado Cravejado com Zirconias', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-cravejado-com-zirconias-1719410417.0536.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Entrelaçado Cravejado com Zirconias', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-cravejado-com-zirconias-1719410417.0536.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="2844">
+                    <h3>Anel Entrelaçado Cravejado com Zirconias</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 36 - REF: 6298 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-com-1-fileira-de-zirconia-1759253979.8005.jpg" alt="Anel Inspiração V com 1 Fileira de Zirconia" onclick="openProductModal('6298', 'Anel Inspiração V com 1 Fileira de Zirconia', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-com-1-fileira-de-zirconia-1759253979.8005.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Inspiração V com 1 Fileira de Zirconia', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-replica-v-com-1-fileira-de-zirconia-1759253979.8005.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="6298">
+                    <h3>Anel Inspiração V com 1 Fileira de Zirconia</h3>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 37 - REF: 5473 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-3-fileiras-de-zirconias-1738153448.8552.jpg" alt="Anel Aparador com 3 Fileiras de Zirconias" onclick="openProductModal('5473', 'Anel Aparador com 3 Fileiras de Zirconias', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-3-fileiras-de-zirconias-1738153448.8552.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Aparador com 3 Fileiras de Zirconias', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-aparador-com-3-fileiras-de-zirconias-1738153448.8552.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5473">
+                    <h3>Anel Aparador com 3 Fileiras de Zirconias</h3>
+                    <span class="price">R$ 159,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 38 - REF: 54 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-grande-metade-em-zirconias-1748008256.197.jpg" alt="Anel Entrelaçado Grande Metade em Zirconias" onclick="openProductModal('54', 'Anel Entrelaçado Grande Metade em Zirconias', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-grande-metade-em-zirconias-1748008256.197.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Entrelaçado Grande Metade em Zirconias', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-entrelacado-grande-metade-em-zirconias-1748008256.197.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="54">
+                    <h3>Anel Entrelaçado Grande Metade em Zirconias</h3>
+                    <span class="price">R$ 179,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 39 - REF: 1880 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-7-elos-com-zirconias-1744899743.7273.jpg" alt="Anel 7 Elos com Zirconia" onclick="openProductModal('1880', 'Anel 7 Elos com Zirconia', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-7-elos-com-zirconias-1744899743.7273.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel 7 Elos com Zirconia', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-7-elos-com-zirconias-1744899743.7273.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="1880">
+                    <h3>Anel 7 Elos com Zirconia</h3>
+                    <span class="price">R$ 179,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 40 - REF: 3218 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-zirconias-navetes-todo-cravejado-ao-redor-ouro-18k-1738095794.8013.jpg" alt="Anel Zirconias Navete Todo Cravejado Redor" onclick="openProductModal('3218', 'Anel Zirconias Navete Todo Cravejado Redor', 169.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-zirconias-navetes-todo-cravejado-ao-redor-ouro-18k-1738095794.8013.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Zirconias Navete Todo Cravejado Redor', 169.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-zirconias-navetes-todo-cravejado-ao-redor-ouro-18k-1738095794.8013.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="3218">
+                    <h3>Anel Zirconias Navete Todo Cravejado Redor</h3>
+                    <span class="price">R$ 169,90</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Botão WhatsApp Flutuante -->
+        <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+            <img src="assents/zap.png" alt="WhatsApp">
+        </a>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ggold Joias. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

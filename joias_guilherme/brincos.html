@@ -1,0 +1,509 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ggold | Brincos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+            
+            <nav class="desktop-nav">
+                <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                    <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+            <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                    <span>Pulseiras</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                    <span>Anéis</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="aneis-mobile" class="mobile-dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </div>
+
+        <section class="mini-hero">
+            <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+            <div class="hero-content">
+                <h1>GGOLD JOIAS</h1>
+                <p>Elegância em cada detalhe.</p>
+            </div>
+        </section>
+
+        <div class="page-header"><h2>Brincos</h2><p>Detalhes que iluminam</p></div>
+
+        <section class="product-grid">
+         
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-argolas-cravejadas-1693425172.0853.jpg" alt="BRINCO TRIO DE ARGOLAS GRANDE CRAVEJADAS COM ZIRCONIAS" onclick="openProductModal('BRINCO TRIO DE ARGOLAS GRANDE CRAVEJADAS COM ZIRCONIAS', 'R$ 249,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-argolas-cravejadas-1693425172.0853.jpg', 1723)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO TRIO DE ARGOLAS GRANDE CRAVEJADAS COM ZIRCONIAS', 'R$ 249,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-argolas-cravejadas-1693425172.0853.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO TRIO DE ARGOLAS GRANDE CRAVEJADAS COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 249,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-vazado-e-cravejado-com-zirconias-1693427087.9105.jpg" alt="BRINCO CORAÇÃO VAZADO E CRAVEJADO COM ZIRCONIAS" onclick="openProductModal('BRINCO CORAÇÃO VAZADO E CRAVEJADO COM ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-vazado-e-cravejado-com-zirconias-1693427087.9105.jpg', 474)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO CORAÇÃO VAZADO E CRAVEJADO COM ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-vazado-e-cravejado-com-zirconias-1693427087.9105.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO CORAÇÃO VAZADO E CRAVEJADO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-mini-olho-grego-cravejado-com-zirconias-1694544429.3145.jpg" alt="BRINCO MINI OLHO GREGO CRAVEJADO COM ZIRCONIAS" onclick="openProductModal('BRINCO MINI OLHO GREGO CRAVEJADO COM ZIRCONIAS', 'R$ 79,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-mini-olho-grego-cravejado-com-zirconias-1694544429.3145.jpg', 417)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO MINI OLHO GREGO CRAVEJADO COM ZIRCONIAS', 'R$ 79,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-mini-olho-grego-cravejado-com-zirconias-1694544429.3145.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO MINI OLHO GREGO CRAVEJADO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 79,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-bolinhas-lisas--1702473819.7082.jpg" alt="BRINCO TRIO DE BOLINHAS LISAS" onclick="openProductModal('BRINCO TRIO DE BOLINHAS LISAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-bolinhas-lisas--1702473819.7082.jpg', 2751)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO TRIO DE BOLINHAS LISAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-bolinhas-lisas--1702473819.7082.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO TRIO DE BOLINHAS LISAS</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-zirconias-1702481299.1208.jpg" alt="BRINCO TRIO DE ZIRCONIAS" onclick="openProductModal('BRINCO TRIO DE ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-zirconias-1702481299.1208.jpg', 331)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO TRIO DE ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-zirconias-1702481299.1208.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO TRIO DE ZIRCONIAS</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondo-martelad-1703018515.2888.jpg" alt="BRINCO REDONDO MARTELADO" onclick="openProductModal('BRINCO REDONDO MARTELADO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondo-martelad-1703018515.2888.jpg', 3028)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO REDONDO MARTELADO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondo-martelad-1703018515.2888.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO REDONDO MARTELADO</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-meia-bola-lisa-1703018592.0598.jpg" alt="BRINCO MEIA BOLA LISA" onclick="openProductModal('BRINCO MEIA BOLA LISA', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-meia-bola-lisa-1703018592.0598.jpg', 2203)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO MEIA BOLA LISA', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-meia-bola-lisa-1703018592.0598.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO MEIA BOLA LISA</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <div class="img-carousel" id="carousel-3915">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-pequenas-cravejadas-com-zirconias-1714505878.7158.jpg" alt="BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS" onclick="openProductModal('BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-pequenas-cravejadas-com-zirconias-1714505878.7158.jpg', 3915)">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-pequenas-cravejadas-1706793764.0319.jpg" alt="BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS" onclick="openProductModal('BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-pequenas-cravejadas-1706793764.0319.jpg', 3915)">
+                        <button class="carousel-btn prev" onclick="moveCarousel('carousel-3915', -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('carousel-3915', 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot" onclick="setCarouselSlide('carousel-3915', 0)"></span>
+                            <span class="dot" onclick="setCarouselSlide('carousel-3915', 1)"></span>
+                        </div>
+                    </div>
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-pequenas-cravejadas-com-zirconias-1714505878.7158.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLAS PEQUENAS CRAVEJADAS COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 119,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-argolas-coracao-cravejadas-zirconias-1706793720.2666.jpg" alt="BRINCO TRIO DE ARGOLAS CORAÇÃO CRAVEJADAS ZIRCONIA" onclick="openProductModal('BRINCO TRIO DE ARGOLAS CORAÇÃO CRAVEJADAS ZIRCONIA', 'R$ 209,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-argolas-coracao-cravejadas-zirconias-1706793720.2666.jpg', 3442)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO TRIO DE ARGOLAS CORAÇÃO CRAVEJADAS ZIRCONIA', 'R$ 209,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-argolas-coracao-cravejadas-zirconias-1706793720.2666.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO TRIO DE ARGOLAS CORAÇÃO CRAVEJADAS ZIRCONIA</h3>
+                    <p class="product-price">R$ 209,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-entrelacados-grandes-com-zirconias-brancas-1706793697.014.jpg" alt="BRINCO ENTRELAÇADOS COM ZIRCONIAS" onclick="openProductModal('BRINCO ENTRELAÇADOS COM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-entrelacados-grandes-com-zirconias-brancas-1706793697.014.jpg', 3902)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ENTRELAÇADOS COM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-entrelacados-grandes-com-zirconias-brancas-1706793697.014.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ENTRELAÇADOS COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brinco-ponto-de-luz-com-macro-zirconia-1710432229.4081.jpg" alt="BRINCO PONTO DE LUZ COM MACRO ZIRCONIA" onclick="openProductModal('BRINCO PONTO DE LUZ COM MACRO ZIRCONIA', 'R$ 89,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brinco-ponto-de-luz-com-macro-zirconia-1710432229.4081.jpg', 1682)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO PONTO DE LUZ COM MACRO ZIRCONIA', 'R$ 89,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brinco-ponto-de-luz-com-macro-zirconia-1710432229.4081.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO PONTO DE LUZ COM MACRO ZIRCONIA</h3>
+                    <p class="product-price">R$ 89,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-coracao-cravejado-com-zirconias-1710872312.2011.jpg" alt="BRINCO ARGOLA CORAÇÃO CRAVEJADO COM ZIRCONIAS" onclick="openProductModal('BRINCO ARGOLA CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 79,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-coracao-cravejado-com-zirconias-1710872312.2011.jpg', 391)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLA CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 79,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-coracao-cravejado-com-zirconias-1710872312.2011.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLA CORAÇÃO CRAVEJADO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 79,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-lisas-pequenas-ouro-18k-1731423812.571.png" alt="BRINCO ARGOLAS LISAS PEQUENAS" onclick="openProductModal('BRINCO ARGOLAS LISAS PEQUENAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-lisas-pequenas-ouro-18k-1731423812.571.png', 4647)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLAS LISAS PEQUENAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-lisas-pequenas-ouro-18k-1731423812.571.png')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLAS LISAS PEQUENAS</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-1719413413.8658.jpg" alt="BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS" onclick="openProductModal('BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-1719413413.8658.jpg', 409)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-1719413413.8658.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-botao-oval-liso-1746559546.874.jpg" alt="BRINCO BOTÃO OVAL LISO" onclick="openProductModal('BRINCO BOTÃO OVAL LISO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-botao-oval-liso-1746559546.874.jpg', 5257)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO BOTÃO OVAL LISO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-botao-oval-liso-1746559546.874.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO BOTÃO OVAL LISO</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-retangular-geometrico-liso-1746559249.7.jpg" alt="BRINCO RETRANGULAR GEOMETRICO LISO" onclick="openProductModal('BRINCO RETRANGULAR GEOMETRICO LISO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-retangular-geometrico-liso-1746559249.7.jpg', 5971)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO RETRANGULAR GEOMETRICO LISO', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-retangular-geometrico-liso-1746559249.7.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO RETRANGULAR GEOMETRICO LISO</h3>
+                    <p class="product-price">R$ 99,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-ouro-18k--1731421925.2461.jpg" alt="BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS" onclick="openProductModal('BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-ouro-18k--1731421925.2461.jpg', 4731)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-coracao-cravejado-com-zirconias-ouro-18k--1731421925.2461.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO CORAÇÃO CRAVEJADO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 119,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-organico-oval-martelado-1761834262.9581.jpg" alt="BRINCO ORGANICO OVAL MARTELADO" onclick="openProductModal('BRINCO ORGANICO OVAL MARTELADO', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-organico-oval-martelado-1761834262.9581.jpg', 7112)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ORGANICO OVAL MARTELADO', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-organico-oval-martelado-1761834262.9581.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ORGANICO OVAL MARTELADO</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-com-listras-1761832151.8786.jpg" alt="BRINCO OVAL COM LISTRAS" onclick="openProductModal('BRINCO OVAL COM LISTRAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-com-listras-1761832151.8786.jpg', 5405)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO OVAL COM LISTRAS', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-com-listras-1761832151.8786.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO OVAL COM LISTRAS</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-formato-espiral-cravejado-1761833619.8475.jpg" alt="BRINCO FORMATO ESPIRAL CRAVEJADO" onclick="openProductModal('BRINCO FORMATO ESPIRAL CRAVEJADO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-formato-espiral-cravejado-1761833619.8475.jpg', 7111)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO FORMATO ESPIRAL CRAVEJADO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-formato-espiral-cravejado-1761833619.8475.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO FORMATO ESPIRAL CRAVEJADO</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-losango-com-zirconias-1746558699.2743.jpg" alt="BRINCO LOSANGO COM ZIRCONIAS" onclick="openProductModal('BRINCO LOSANGO COM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-losango-com-zirconias-1746558699.2743.jpg', 5986)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO LOSANGO COM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-losango-com-zirconias-1746558699.2743.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO LOSANGO COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-com-coracao-cravejado-pequeno-1759255294.0923.jpg" alt="BRINCO ARGOLA COM CORAÇÃO CRAVEJADO PEQUENO" onclick="openProductModal('BRINCO ARGOLA COM CORAÇÃO CRAVEJADO PEQUENO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-com-coracao-cravejado-pequeno-1759255294.0923.jpg', 547)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLA COM CORAÇÃO CRAVEJADO PEQUENO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argola-com-coracao-cravejado-pequeno-1759255294.0923.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLA COM CORAÇÃO CRAVEJADO PEQUENO</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-organico-cravejado-com-zirconias-1746557679.8043.jpg" alt="BRINCO REDONDOS ORGANICO CRAVEJADO COM ZIRCONIA" onclick="openProductModal('BRINCO REDONDOS ORGANICO CRAVEJADO COM ZIRCONIA', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-organico-cravejado-com-zirconias-1746557679.8043.jpg', 5602)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO REDONDOS ORGANICO CRAVEJADO COM ZIRCONIA', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-organico-cravejado-com-zirconias-1746557679.8043.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO REDONDOS ORGANICO CRAVEJADO COM ZIRCONIA</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-detalhadas-com-filetes-em-zirconias-1759252986.4805.jpg" alt="BRINCO ARGOLAS DETALHADAS COM FILETES EM ZIRCONIAS" onclick="openProductModal('BRINCO ARGOLAS DETALHADAS COM FILETES EM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-detalhadas-com-filetes-em-zirconias-1759252986.4805.jpg', 6260)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLAS DETALHADAS COM FILETES EM ZIRCONIAS', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-detalhadas-com-filetes-em-zirconias-1759252986.4805.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLAS DETALHADAS COM FILETES EM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 129,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-com-pingente-coracao-cravejado-ouro-18k-1731413835.6125.png" alt="BRINCO ARGOLAS COM PINGENTE CORAÇÃO CRAVEJADO" onclick="openProductModal('BRINCO ARGOLAS COM PINGENTE CORAÇÃO CRAVEJADO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-com-pingente-coracao-cravejado-ouro-18k-1731413835.6125.png', 290)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLAS COM PINGENTE CORAÇÃO CRAVEJADO', 'R$ 129,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-com-pingente-coracao-cravejado-ouro-18k-1731413835.6125.png')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLAS COM PINGENTE CORAÇÃO CRAVEJADO</h3>
+                    <p class="product-price">R$ 129,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-replica-swarovski-coracao-cravejado-grande-1768335490.3.jpg" alt="BRINCO CORAÇÃO CRAVEJADO GRANDE" onclick="openProductModal('BRINCO CORAÇÃO CRAVEJADO GRANDE', 'R$ 139,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-replica-swarovski-coracao-cravejado-grande-1768335490.3.jpg', 1654)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO CORAÇÃO CRAVEJADO GRANDE', 'R$ 139,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-replica-swarovski-coracao-cravejado-grande-1768335490.3.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO CORAÇÃO CRAVEJADO GRANDE</h3>
+                    <p class="product-price">R$ 139,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <div class="img-carousel" id="carousel-4272">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-bubble-cravejada-1759252807.6426.jpg" alt="BRINCO ARGOLAS BUBBLE CRAVEJADA" onclick="openProductModal('BRINCO ARGOLAS BUBBLE CRAVEJADA', 'R$ 149,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-bubble-cravejada-1759252807.6426.jpg', 4272)">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-bubble-cravejada-1761832939.5756.jpg" alt="BRINCO ARGOLAS BUBBLE CRAVEJADA" onclick="openProductModal('BRINCO ARGOLAS BUBBLE CRAVEJADA', 'R$ 149,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-bubble-cravejada-1761832939.5756.jpg', 4272)">
+                        <button class="carousel-btn prev" onclick="moveCarousel('carousel-4272', -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('carousel-4272', 1)">&#10095;</button>
+                        <div class="carousel-dots">
+                            <span class="dot" onclick="setCarouselSlide('carousel-4272', 0)"></span>
+                            <span class="dot" onclick="setCarouselSlide('carousel-4272', 1)"></span>
+                        </div>
+                    </div>
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ARGOLAS BUBBLE CRAVEJADA', 'R$ 149,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-argolas-bubble-cravejada-1759252807.6426.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ARGOLAS BUBBLE CRAVEJADA</h3>
+                    <p class="product-price">R$ 149,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-inspiracao-no-cravejado-1759256091.2192.jpg" alt="BRINCO INSPIRAÇÃO NÓ CRAVEJADO" onclick="openProductModal('BRINCO INSPIRAÇÃO NÓ CRAVEJADO', 'R$ 139,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-inspiracao-no-cravejado-1759256091.2192.jpg', 6683)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO INSPIRAÇÃO NÓ CRAVEJADO', 'R$ 139,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-inspiracao-no-cravejado-1759256091.2192.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO INSPIRAÇÃO NÓ CRAVEJADO</h3>
+                    <p class="product-price">R$ 139,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-com-texturas-1761832658.6894.jpg" alt="BRINCO REDONDOS COM TEXTURA" onclick="openProductModal('BRINCO REDONDOS COM TEXTURA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-com-texturas-1761832658.6894.jpg', 7101)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO REDONDOS COM TEXTURA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-redondos-com-texturas-1761832658.6894.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO REDONDOS COM TEXTURA</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-elos-entrelacados-com-zirconias--1731421534.1812.jpg" alt="BRINCO ELOS ENTRELAÇADOS COM ZIRCONIAS" onclick="openProductModal('BRINCO ELOS ENTRELAÇADOS COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-elos-entrelacados-com-zirconias--1731421534.1812.jpg', 4734)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO ELOS ENTRELAÇADOS COM ZIRCONIAS', 'R$ 119,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-elos-entrelacados-com-zirconias--1731421534.1812.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO ELOS ENTRELAÇADOS COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 119,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-liso-ouro-18k--1731416110.9636.png" alt="BRINCO OVAL LISO" onclick="openProductModal('BRINCO OVAL LISO', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-liso-ouro-18k--1731416110.9636.png', 3343)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO OVAL LISO', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-oval-liso-ouro-18k--1731416110.9636.png')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO OVAL LISO</h3>
+                    <p class="product-price">R$ 109,90 </p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-gota-lisa-ouro-18k-1738162579.1582.jpg" alt="BRINCO GOTA LISA" onclick="openProductModal('BRINCO GOTA LISA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-gota-lisa-ouro-18k-1738162579.1582.jpg', 1810)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO GOTA LISA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-gota-lisa-ouro-18k-1738162579.1582.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO GOTA LISA</h3>
+                    <p class="product-price">R$ 109,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-quadrados-com-detalhe-nas-bordas-1746558553.8043.jpg" alt="BRINCO QUADRADO COM DETALHES NA BORDA" onclick="openProductModal('BRINCO QUADRADO COM DETALHES NA BORDA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-quadrados-com-detalhe-nas-bordas-1746558553.8043.jpg', 1547)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('BRINCO QUADRADO COM DETALHES NA BORDA', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-quadrados-com-detalhe-nas-bordas-1746558553.8043.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>BRINCO QUADRADO COM DETALHES NA BORDA</h3>
+                    <p class="product-price">R$ 109,90</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Botão WhatsApp Flutuante -->
+        <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+            <img src="assents/zap.png" alt="WhatsApp">
+        </a>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ggold Joias. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

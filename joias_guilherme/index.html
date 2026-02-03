@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Joias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .landing-hero {
+            height: 65vh;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .landing-hero .hero-bg-img { opacity: 0.45; }
+        .landing-hero .hero-content h1 { font-size: 3.6rem; letter-spacing: 2px; }
+        .landing-hero .hero-content p { max-width: 520px; margin: 0 auto 30px; }
+        .landing-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-gold {
+            background: var(--gold);
+            color: #000;
+            padding: 14px 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-gold:hover { filter: brightness(0.95); }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            padding: 14px 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            border: 1px solid #fff;
+            transition: 0.3s;
+        }
+        .btn-outline:hover { background: #fff; color: #000; }
+        .landing-section {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 80px 5% 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-family: var(--font-poppins);
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+        .section-title p { color: #666; }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .category-card {
+            position: relative;
+            min-height: 220px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #000;
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover { transform: translateY(-4px); }
+        .category-card img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+        .category-card span {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+        }
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .usp-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+        }
+        .usp-card i { font-size: 1.6rem; color: var(--gold); margin-bottom: 10px; }
+        .usp-card h4 { font-size: 0.95rem; margin-bottom: 6px; }
+        .usp-card p { font-size: 0.85rem; color: #666; }
+        @media (max-width: 768px) {
+            .landing-hero .hero-content h1 { font-size: 2.4rem; }
+            .landing-hero { height: 55vh; }
+            .landing-actions { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/logo.png" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+        <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="landing-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Peças banhadas a ouro 18k para marcar momentos especiais com elegância, brilho e sofisticação.</p>
+            <div class="landing-actions">
+                <a href="colares.html" class="btn-gold">Ver Coleção</a>
+                <a href="https://wa.me/5551994273111" target="_blank" class="btn-outline">Falar no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing-section">
+        <div class="section-title">
+            <h2>Categorias em destaque</h2>
+            <p>Explore as coleções exclusivas da Ggold.</p>
+        </div>
+        <div class="category-grid">
+            <a class="category-card" href="aneisFem.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-chuveirinho-cravejado-1694521628.7469.jpg" alt="Anéis">
+                <span>Anéis Femininos</span>
+            </a>
+            <a class="category-card" href="aneisMasc.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-de-letra-quadrado-texturizado-a-h-1747251343.6615.jpg" alt="Anéis Masculinos">
+                <span>Anéis Masculinos</span>
+            </a>
+            <a class="category-card" href="pulseirasFem.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-com-zirconias-brancas-1694026862.7923.jpg" alt="Pulseiras Femininas">
+                <span>Pulseiras Femininas</span>
+            </a>
+            <a class="category-card" href="pulseiras.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-8mm-fecho-gaveta-duplo-1754053569.2828.jpg" alt="Pulseiras Masculinas">
+                <span>Pulseiras Masculinas</span>
+            </a>
+            <a class="category-card" href="colares.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-com-pingente-e-ponto-de-luz-1759257501.2483.jpg" alt="Colares">
+                <span>Colares</span>
+            </a>
+            <a class="category-card" href="correntes.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-6mm-fecho-canhao-1690909257.6314.jpg" alt="Correntes">
+                <span>Correntes</span>
+            </a>
+            <a class="category-card" href="braceletes.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/bracelete-cravejado-em-zirconias-com-filetes-lisos-1755715245.4252.jpg" alt="Braceletes">
+                <span>Braceletes</span>
+            </a>
+            <a class="category-card" href="brincos.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/brincos-trio-de-argolas-cravejadas-1693425172.0853.jpg" alt="Brincos">
+                <span>Brincos</span>
+            </a>
+            <a class="category-card" href="pingentes.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-com-2-carreiras-de-zirconias-cravejadas-1701186200.0088.jpg" alt="Pingentes">
+                <span>Pingentes</span>
+            </a>
+            <a class="category-card" href="escapularios.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/escapulario-grumet-maria-e-jesus-cristo-1750450444.6453.jpg" alt="Escapulários">
+                <span>Escapulários</span>
+            </a>
+            <a class="category-card" href="tornozeleiras.html">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-cordao-baiano-3mm-ouro-18k-1717600036.5808.jpg" alt="Tornozeleiras">
+                <span>Tornozeleiras</span>
+            </a>
+        </div>
+
+        <div class="usp-grid">
+            <div class="usp-card">
+                <i class="ph ph-sparkle"></i>
+                <h4>Acabamento Premium</h4>
+                <p>Joias com brilho intenso e detalhes sofisticados.</p>
+            </div>
+            <div class="usp-card">
+                <i class="ph ph-shield-check"></i>
+                <h4>Banhado a ouro 18k</h4>
+                <p>Qualidade e durabilidade em cada peça.</p>
+            </div>
+            <div class="usp-card">
+                <i class="ph ph-heart"></i>
+                <h4>Atendimento Personalizado</h4>
+                <p>Suporte rápido e humanizado via WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

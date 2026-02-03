@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Pulseiras Femininas</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 4018 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-2mm-1712689652.4606.jpg" alt="Pulseira Cordão Baiano 2mm" onclick="openProductModal('4018', 'Pulseira Cordão Baiano 2mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-2mm-1712689652.4606.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 2mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-2mm-1712689652.4606.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4018">
+                <h3>Pulseira Cordão Baiano 2mm</h3>
+                <span class="price">R$ 79,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 5298 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-plaquinhas-de-coracoes-lisas-1768416957.1673.jpg" alt="Pulseira Plaquinhas de Coração 2mm" onclick="openProductModal('5298', 'Pulseira Plaquinhas de Coração 2mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-plaquinhas-de-coracoes-lisas-1768416957.1673.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Plaquinhas de Coração 2mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-plaquinhas-de-coracoes-lisas-1768416957.1673.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5298">
+                <h3>Pulseira Plaquinhas de Coração 2mm</h3>
+                <span class="price">R$ 79,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 1035 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-laminada-3mm-1729014592.5255.jpg" alt="Pulseira Fita Laminada 3mm" onclick="openProductModal('1035', 'Pulseira Fita Laminada 3mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-laminada-3mm-1729014592.5255.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Fita Laminada 3mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-laminada-3mm-1729014592.5255.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1035">
+                <h3>Pulseira Fita Laminada 3mm</h3>
+                <span class="price">R$ 79,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 4567 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-fecho-lagosta-1729026219.3774.jpg" alt="Pulseira Grumet Dupla 3mm" onclick="openProductModal('4567', 'Pulseira Grumet Dupla 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-fecho-lagosta-1729026219.3774.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-fecho-lagosta-1729026219.3774.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4567">
+                <h3>Pulseira Grumet Dupla 3mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 243 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-1694026063.5138.jpg" alt="Pulseira Cordão Baiano 3mm" onclick="openProductModal('243', 'Pulseira Cordão Baiano 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-1694026063.5138.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-1694026063.5138.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="243">
+                <h3>Pulseira Cordão Baiano 3mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 161 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-com-zirconias-brancas-1694026862.7923.jpg" alt="Pulseira Riviera com Zirconias Cristais 3mm" onclick="openProductModal('161', 'Pulseira Riviera com Zirconias Cristais 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-com-zirconias-brancas-1694026862.7923.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Riviera com Zirconias Cristais 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-com-zirconias-brancas-1694026862.7923.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="161">
+                <h3>Pulseira Riviera com Zirconias Cristais 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 4408 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cardano-3mm-fecho-boia-ouro-18k-1717619569.0986.jpg" alt="Pulseira Cardano 3mm" onclick="openProductModal('4408', 'Pulseira Cardano 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cardano-3mm-fecho-boia-ouro-18k-1717619569.0986.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cardano 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cardano-3mm-fecho-boia-ouro-18k-1717619569.0986.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4408">
+                <h3>Pulseira Cardano 3mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 5583 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-rabo-de-rato-5mm-1738168126.0047.jpg" alt="Pulseira Rabo de Rato 3mm" onclick="openProductModal('5583', 'Pulseira Rabo de Rato 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-rabo-de-rato-5mm-1738168126.0047.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Rabo de Rato 3mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-rabo-de-rato-5mm-1738168126.0047.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5583">
+                <h3>Pulseira Rabo de Rato 3mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 4110 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-fecho-boia-1718820594.4471.jpg" alt="Pulseira Palmeira 4mm" onclick="openProductModal('4110', 'Pulseira Palmeira 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-fecho-boia-1718820594.4471.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-fecho-boia-1718820594.4471.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4110">
+                <h3>Pulseira Palmeira 4mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 2917 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-fecho-lagosta-1729026142.3967.jpg" alt="Pulseira Grumet Dupla 4mm" onclick="openProductModal('2917', 'Pulseira Grumet Dupla 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-fecho-lagosta-1729026142.3967.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-fecho-lagosta-1729026142.3967.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2917">
+                <h3>Pulseira Grumet Dupla 4mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 25 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-4mm-1759244742.0993.jpg" alt="Pulseira Português 4mm" onclick="openProductModal('25', 'Pulseira Português 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-4mm-1759244742.0993.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Português 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-4mm-1759244742.0993.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="25">
+                <h3>Pulseira Português 4mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 3288 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-navetes-cristais-4mm-1759245028.0214.jpg" alt="Pulseira Riviera Navetes Cristais 4mm" onclick="openProductModal('3288', 'Pulseira Riviera Navetes Cristais 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-navetes-cristais-4mm-1759245028.0214.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Riviera Navetes Cristais 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-riviera-navetes-cristais-4mm-1759245028.0214.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3288">
+                <h3>Pulseira Riviera Navetes Cristais 4mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 1838 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-1694026358.797.jpg" alt="Pulseira Cordão Baiano 5mm" onclick="openProductModal('1838', 'Pulseira Cordão Baiano 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-1694026358.797.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-1694026358.797.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1838">
+                <h3>Pulseira Cordão Baiano 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 112 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-elos-inspiracao-tiffany-1764339129.0873.jpg" alt="Pulseira Inspiração Tiffany 5mm" onclick="openProductModal('112', 'Pulseira Inspiração Tiffany 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-elos-inspiracao-tiffany-1764339129.0873.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Inspiração Tiffany 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-com-elos-inspiracao-tiffany-1764339129.0873.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="112">
+                <h3>Pulseira Inspiração Tiffany 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 176 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-1694025463.0108.jpg" alt="Pulseira Meia Corda 5mm" onclick="openProductModal('176', 'Pulseira Meia Corda 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-1694025463.0108.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Meia Corda 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-1694025463.0108.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="176">
+                <h3>Pulseira Meia Corda 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 3138 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-5mm-ouro-18k-1738168249.1717.jpg" alt="Pulseira Portuguesa 5mm" onclick="openProductModal('3138', 'Pulseira Portuguesa 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-5mm-ouro-18k-1738168249.1717.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Portuguesa 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-5mm-ouro-18k-1738168249.1717.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3138">
+                <h3>Pulseira Portuguesa 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 197 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-snake-6mm-ouro-18k-1709232494.0227.jpg" alt="Pulseira Snake 6mm" onclick="openProductModal('197', 'Pulseira Snake 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-snake-6mm-ouro-18k-1709232494.0227.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Snake 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-snake-6mm-ouro-18k-1709232494.0227.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="197">
+                <h3>Pulseira Snake 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 853 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-6mm-fecho-boia-ouro-18k-1730214127.431.jpg" alt="Pulseira Português 6mm" onclick="openProductModal('853', 'Pulseira Português 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-6mm-fecho-boia-ouro-18k-1730214127.431.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Português 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-6mm-fecho-boia-ouro-18k-1730214127.431.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="853">
+                <h3>Pulseira Português 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 4038 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-fecho-boia-1718819635.8892.jpg" alt="Pulseira Palmeira 6mm" onclick="openProductModal('4038', 'Pulseira Palmeira 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-fecho-boia-1718819635.8892.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-fecho-boia-1718819635.8892.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4038">
+                <h3>Pulseira Palmeira 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 5143 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-fecho-boia-1738162844.5032.jpg" alt="Pulseira Cordão Baiano 6mm" onclick="openProductModal('5143', 'Pulseira Cordão Baiano 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-fecho-boia-1738162844.5032.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-fecho-boia-1738162844.5032.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5143">
+                <h3>Pulseira Cordão Baiano 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 21 - REF: 2216 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-9mm-fecho-boia-1709232689.8763.jpg" alt="Pulseira Grumet 9mm" onclick="openProductModal('2216', 'Pulseira Grumet 9mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-9mm-fecho-boia-1709232689.8763.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet 9mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-9mm-fecho-boia-1709232689.8763.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2216">
+                <h3>Pulseira Grumet 9mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 22 - REF: 6673 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-9mm-com-detalhes-fecho-boia-1759250007.6684.jpg" alt="Pulseira Grumet Dupla 9mm" onclick="openProductModal('6673', 'Pulseira Grumet Dupla 9mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-9mm-com-detalhes-fecho-boia-1759250007.6684.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 9mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-9mm-com-detalhes-fecho-boia-1759250007.6684.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6673">
+                <h3>Pulseira Grumet Dupla 9mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 23 - REF: 1454 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-replica-1694025211.9311.jpg" alt="Pulseira Inspiração de Joia" onclick="openProductModal('1454', 'Pulseira Inspiração de Joia', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-replica-1694025211.9311.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Inspiração de Joia', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-replica-1694025211.9311.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1454">
+                <h3>Pulseira Inspiração de Joia</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 24 - REF: 60 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-10mm-fecho-boia-1696529058.6164.jpg" alt="Pulseira Português 10mm" onclick="openProductModal('60', 'Pulseira Português 10mm', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-10mm-fecho-boia-1696529058.6164.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Português 10mm', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-portugues-10mm-fecho-boia-1696529058.6164.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="60">
+                <h3>Pulseira Português 10mm</h3>
+                <span class="price">R$ 239,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 25 - REF: 2680 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-coracao-13mm-crevajada-com-zirconias-1696528832.7589.jpg" alt="Pulseira Coração Cravejado com Zircônias 13mm" onclick="openProductModal('2680', 'Pulseira Coração Cravejado com Zircônias 13mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-coracao-13mm-crevajada-com-zirconias-1696528832.7589.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Coração Cravejado com Zircônias 13mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elos-coracao-13mm-crevajada-com-zirconias-1696528832.7589.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2680">
+                <h3>Pulseira Coração Cravejado com Zircônias 13mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 26 - REF: 3047 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-bali-7mm-fecho-boia-1709233850.1218.jpg" alt="Pulseira Bali 7mm" onclick="openProductModal('3047', 'Pulseira Bali 7mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-bali-7mm-fecho-boia-1709233850.1218.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Bali 7mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-bali-7mm-fecho-boia-1709233850.1218.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3047">
+                <h3>Pulseira Bali 7mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 27 - REF: 3724 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-trancada-laminada-1710266617.6211.jpg" alt="Pulseira Fita Trançada Laminada" onclick="openProductModal('3724', 'Pulseira Fita Trançada Laminada', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-trancada-laminada-1710266617.6211.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Fita Trançada Laminada', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-fita-trancada-laminada-1710266617.6211.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3724">
+                <h3>Pulseira Fita Trançada Laminada</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 28 - REF: 3972 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-semi-rigida-8mm-1714075420.9806.jpg" alt="Pulseira Grumet Detalhada 8mm" onclick="openProductModal('3972', 'Pulseira Grumet Detalhada 8mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-semi-rigida-8mm-1714075420.9806.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Detalhada 8mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-semi-rigida-8mm-1714075420.9806.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3972">
+                <h3>Pulseira Grumet Detalhada 8mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 29 - REF: 3021 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg" alt="Pulseira Grumet Dupla 6mm" onclick="openProductModal('3021', 'Pulseira Grumet Dupla 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3021">
+                <h3>Pulseira Grumet Dupla 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 30 - REF: 70 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg" alt="Pulseira Grumet Union 6mm" onclick="openProductModal('70', 'Pulseira Grumet Union 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Union 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-boia-1718820448.7054.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="70">
+                <h3>Pulseira Grumet Union 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 31 - REF: 5294 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-5294">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-1738163156.4986.jpg" alt="Pulseira Grumet Detalhada 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-1758219212.3944.jpg" alt="Pulseira Grumet Detalhada 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Detalhada 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-1738163156.4986.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5294">
+                <h3>Pulseira Grumet Detalhada 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 32 - REF: 5091 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-10mm-1746462133.3438.jpg" alt="Pulseira Malha Relógio 10mm" onclick="openProductModal('5091', 'Pulseira Malha Relógio 10mm', 189.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-10mm-1746462133.3438.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Malha Relógio 10mm', 189.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-10mm-1746462133.3438.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5091">
+                <h3>Pulseira Malha Relógio 10mm</h3>
+                <span class="price">R$ 189,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 33 - REF: 6215 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-fecho-boia-1759250687.7824.jpg" alt="Pulseira Grumet 4mm" onclick="openProductModal('6215', 'Pulseira Grumet 4mm', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-fecho-boia-1759250687.7824.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet 4mm', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-fecho-boia-1759250687.7824.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6215">
+                <h3>Pulseira Grumet 4mm</h3>
+                <span class="price">R$ 129,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 34 - REF: 6216 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-6mm-fecho-boia-1759250737.99.jpg" alt="Pulseira Grumet 6mm" onclick="openProductModal('6216', 'Pulseira Grumet 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-6mm-fecho-boia-1759250737.99.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-6mm-fecho-boia-1759250737.99.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6216">
+                <h3>Pulseira Grumet 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 35 - REF: 5196 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-6mm-1764339380.7125.jpg" alt="Pulseira Malha Relógio 6mm" onclick="openProductModal('5196', 'Pulseira Malha Relógio 6mm', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-6mm-1764339380.7125.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Malha Relógio 6mm', 129.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-malha-relogio-6mm-1764339380.7125.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5196">
+                <h3>Pulseira Malha Relógio 6mm</h3>
+                <span class="price">R$ 129,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()"
+            style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+        <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Pingentes</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 903 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-pequena-ouro-18k-1693250781.0867.jpg" alt="Pingente Cruz Palito Pequena" onclick="openProductModal('903', 'Pingente Cruz Palito Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-pequena-ouro-18k-1693250781.0867.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-pequena-ouro-18k-1693250781.0867.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="903">
+                <h3>Pingente Cruz Palito Pequena</h3>
+                <span class="price">R$ 59,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 2874 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-lisa-com-pontas-laminadas-ouro-18k-1693251039.45.jpg" alt="Pingente Cruz Palito c/ Ponta Laminada Pequena" onclick="openProductModal('2874', 'Pingente Cruz Palito c/ Ponta Laminada Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-lisa-com-pontas-laminadas-ouro-18k-1693251039.45.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito c/ Ponta Laminada Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-lisa-com-pontas-laminadas-ouro-18k-1693251039.45.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2874">
+                <h3>Pingente Cruz Palito c/ Ponta Laminada Pequena</h3>
+                <span class="price">R$ 59,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 917 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-vazada-cruz-pequena-ouro-18k-1693254340.1266.jpg" alt="Pingente Cruz Placa Pequena" onclick="openProductModal('917', 'Pingente Cruz Placa Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-vazada-cruz-pequena-ouro-18k-1693254340.1266.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Placa Pequena', 59.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-vazada-cruz-pequena-ouro-18k-1693254340.1266.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="917">
+                <h3>Pingente Cruz Placa Pequena</h3>
+                <span class="price">R$ 59,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 2489 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-redondo-pequeno-ouro-18k-1693247760.9647.jpg" alt="Pingente Estrela Davi Medio" onclick="openProductModal('2489', 'Pingente Estrela Davi Medio', 49.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-redondo-pequeno-ouro-18k-1693247760.9647.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Estrela Davi Medio', 49.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-redondo-pequeno-ouro-18k-1693247760.9647.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2489">
+                <h3>Pingente Estrela Davi Medio</h3>
+                <span class="price">R$ 49,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 1001 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-pequeno-ouro-18k-1692724996.8518.jpg" alt="Pingente Estrela Davi Pequena" onclick="openProductModal('1001', 'Pingente Estrela Davi Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-pequeno-ouro-18k-1692724996.8518.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Estrela Davi Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-estrela-de-davi-pequeno-ouro-18k-1692724996.8518.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1001">
+                <h3>Pingente Estrela Davi Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 2145 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-placa-pequena-ouro-18k-1692731097.3379.jpg" alt="Pingente Placa Jesus Cristo Pequena" onclick="openProductModal('2145', 'Pingente Placa Jesus Cristo Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-placa-pequena-ouro-18k-1692731097.3379.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Placa Jesus Cristo Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-placa-pequena-ouro-18k-1692731097.3379.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2145">
+                <h3>Pingente Placa Jesus Cristo Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 921 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-sao-jorge-detalhada-pequena-ouro-18k-1693232058.6918.jpg" alt="Pingente Placa São Jorge Pequena" onclick="openProductModal('921', 'Pingente Placa São Jorge Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-sao-jorge-detalhada-pequena-ouro-18k-1693232058.6918.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Placa São Jorge Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-sao-jorge-detalhada-pequena-ouro-18k-1693232058.6918.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="921">
+                <h3>Pingente Placa São Jorge Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 2483 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-medalha-pequena-ouro-18k-1693249900.9536.jpg" alt="Pingente São Bento Pequena" onclick="openProductModal('2483', 'Pingente São Bento Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-medalha-pequena-ouro-18k-1693249900.9536.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Bento Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-medalha-pequena-ouro-18k-1693249900.9536.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2483">
+                <h3>Pingente São Bento Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 890 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-vazada-com-face-de-cristo-tam-p-1758226414.729.jpg" alt="Pingente Cruz Vazada Cristo Pequena" onclick="openProductModal('890', 'Pingente Cruz Vazada Cristo Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-vazada-com-face-de-cristo-tam-p-1758226414.729.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Vazada Cristo Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-vazada-com-face-de-cristo-tam-p-1758226414.729.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="890">
+                <h3>Pingente Cruz Vazada Cristo Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 5242 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-pequena-ouro-18k-1737115888.2319.jpg" alt="Pingente Cruz Palito Amarrada Pequena" onclick="openProductModal('5242', 'Pingente Cruz Palito Amarrada Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-pequena-ouro-18k-1737115888.2319.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito Amarrada Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-pequena-ouro-18k-1737115888.2319.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5242">
+                <h3>Pingente Cruz Palito Amarrada Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 888 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-medio-ouro-18k-1693250741.6319.jpg" alt="Pingente Cruz Palito Medio" onclick="openProductModal('888', 'Pingente Cruz Palito Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-medio-ouro-18k-1693250741.6319.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-medio-ouro-18k-1693250741.6319.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="888">
+                <h3>Pingente Cruz Palito Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 879 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-grande-ouro-18k-1693251092.279.jpg" alt="Pingente Cruz Palito Grande" onclick="openProductModal('879', 'Pingente Cruz Palito Grande', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-grande-ouro-18k-1693251092.279.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito Grande', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-grande-ouro-18k-1693251092.279.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="879">
+                <h3>Pingente Cruz Palito Grande</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 947 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-medio-ouro-18k-1692725832.8471.jpg" alt="Pingente São Jorge Medio" onclick="openProductModal('947', 'Pingente São Jorge Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-medio-ouro-18k-1692725832.8471.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Jorge Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-medio-ouro-18k-1692725832.8471.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="947">
+                <h3>Pingente São Jorge Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 912 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-placa-vazada-media-1758285007.9284.jpg" alt="Pingente Cruz Placa Medio" onclick="openProductModal('912', 'Pingente Cruz Placa Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-placa-vazada-media-1758285007.9284.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Placa Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-placa-vazada-media-1758285007.9284.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="912">
+                <h3>Pingente Cruz Placa Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 2492 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-nossa-senhora-ouro-18k-1693255046.1589.jpg" alt="Pingente Nossa Senhora Medio" onclick="openProductModal('2492', 'Pingente Nossa Senhora Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-nossa-senhora-ouro-18k-1693255046.1589.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Nossa Senhora Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-nossa-senhora-ouro-18k-1693255046.1589.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2492">
+                <h3>Pingente Nossa Senhora Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 2493 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-ouro-18k-1693254922.0523.jpg" alt="Pingente Placa Jesus Cristo Medio" onclick="openProductModal('2493', 'Pingente Placa Jesus Cristo Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-ouro-18k-1693254922.0523.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Placa Jesus Cristo Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-ouro-18k-1693254922.0523.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2493">
+                <h3>Pingente Placa Jesus Cristo Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 867 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-pequena-arredondada-ouro-18k-1693315930.6749.jpg" alt="Pingente Letra Pequena" onclick="openProductModal('867', 'Pingente Letra Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-pequena-arredondada-ouro-18k-1693315930.6749.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Pequena', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-pequena-arredondada-ouro-18k-1693315930.6749.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="867">
+                <h3>Pingente Letra Pequena</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 864 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-com-letra-media-ouro-18k-1693316307.2067.jpg" alt="Pingente Letra Placa Media" onclick="openProductModal('864', 'Pingente Letra Placa Media', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-com-letra-media-ouro-18k-1693316307.2067.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Placa Media', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-com-letra-media-ouro-18k-1693316307.2067.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="864">
+                <h3>Pingente Letra Placa Media</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 955 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-grande-ouro-18k-1692727366.1811.jpg" alt="Pingente Face Jesus Cristo Medio" onclick="openProductModal('955', 'Pingente Face Jesus Cristo Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-grande-ouro-18k-1692727366.1811.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Face Jesus Cristo Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-jesus-cristo-grande-ouro-18k-1692727366.1811.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="955">
+                <h3>Pingente Face Jesus Cristo Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 945 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-grande-ouro-18k-1693226995.2858.jpg" alt="Pingente São Jorge Grande" onclick="openProductModal('945', 'Pingente São Jorge Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-grande-ouro-18k-1693226995.2858.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Jorge Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-vazado-grande-ouro-18k-1693226995.2858.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="945">
+                <h3>Pingente São Jorge Grande</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 21 - REF: 2496 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-media-ouro-18k-1693253465.4357.jpg" alt="Pingente Cruz Palito Amarrada Medio" onclick="openProductModal('2496', 'Pingente Cruz Palito Amarrada Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-media-ouro-18k-1693253465.4357.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Palito Amarrada Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-palito-amarrada-media-ouro-18k-1693253465.4357.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2496">
+                <h3>Pingente Cruz Palito Amarrada Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 22 - REF: 863 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-ouro-18k-1693315805.4104.jpg" alt="Pingente Letra Grande Arredondada" onclick="openProductModal('863', 'Pingente Letra Grande Arredondada', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-ouro-18k-1693315805.4104.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Grande Arredondada', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-ouro-18k-1693315805.4104.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="863">
+                <h3>Pingente Letra Grande Arredondada</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 23 - REF: 949 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-sao-jorge-medio-borda-detalhada-ouro-18k-1692725759.3004.jpg" alt="Pingente Moeda São Jorge Medio" onclick="openProductModal('949', 'Pingente Moeda São Jorge Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-sao-jorge-medio-borda-detalhada-ouro-18k-1692725759.3004.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Moeda São Jorge Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-sao-jorge-medio-borda-detalhada-ouro-18k-1692725759.3004.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="949">
+                <h3>Pingente Moeda São Jorge Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 24 - REF: 2892 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-com-oracao-pai-nosso-ouro-18k-1692822784.0978.jpg" alt="Pingente Jesus Placa Oração Medio" onclick="openProductModal('2892', 'Pingente Jesus Placa Oração Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-com-oracao-pai-nosso-ouro-18k-1692822784.0978.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Jesus Placa Oração Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-jesus-cristo-com-oracao-pai-nosso-ouro-18k-1692822784.0978.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2892">
+                <h3>Pingente Jesus Placa Oração Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 25 - REF: 5862 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-medalha-nossa-senhora-aparecida-1738267647.5948.jpg" alt="Pingente Medalha Nossa Senhora Medio" onclick="openProductModal('5862', 'Pingente Medalha Nossa Senhora Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-medalha-nossa-senhora-aparecida-1738267647.5948.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Medalha Nossa Senhora Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-medalha-nossa-senhora-aparecida-1738267647.5948.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5862">
+                <h3>Pingente Medalha Nossa Senhora Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 26 - REF: 965 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-grande-ouro-18k-1693227059.1838.jpg" alt="Pingente São Jorge Grande" onclick="openProductModal('965', 'Pingente São Jorge Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-grande-ouro-18k-1693227059.1838.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Jorge Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-grande-ouro-18k-1693227059.1838.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="965">
+                <h3>Pingente São Jorge Grande</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 27 - REF: 2881 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-espirito-santo-ouro-18k-1693254996.9062.jpg" alt="Pingente Espirito Santo Medio" onclick="openProductModal('2881', 'Pingente Espirito Santo Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-espirito-santo-ouro-18k-1693254996.9062.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Espirito Santo Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-espirito-santo-ouro-18k-1693254996.9062.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2881">
+                <h3>Pingente Espirito Santo Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 28 - REF: 3134 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-trabalhada-1696420419.1969.jpg" alt="Pingente Letra Placa Trabalhada Medio" onclick="openProductModal('3134', 'Pingente Letra Placa Trabalhada Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-trabalhada-1696420419.1969.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Placa Trabalhada Medio', 69.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-trabalhada-1696420419.1969.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3134">
+                <h3>Pingente Letra Placa Trabalhada Medio</h3>
+                <span class="price">R$ 69,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 32 - REF: 6459 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-cravejada-com-a-lateral-lisa-1750450855.0449.jpg" alt="Pingente Cruz Cravejada Lateral Lisa Medio" onclick="openProductModal('6459', 'Pingente Cruz Cravejada Lateral Lisa Medio', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-cravejada-com-a-lateral-lisa-1750450855.0449.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz Cravejada Lateral Lisa Medio', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-cravejada-com-a-lateral-lisa-1750450855.0449.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6459">
+                <h3>Pingente Cruz Cravejada Lateral Lisa Medio</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 33 - REF: 3556 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-com-2-carreiras-de-zirconias-cravejadas-1701186200.0088.jpg" alt="Pingente Cruz com 2 Carreira Cravejada Medio" onclick="openProductModal('3556', 'Pingente Cruz com 2 Carreira Cravejada Medio', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-com-2-carreiras-de-zirconias-cravejadas-1701186200.0088.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Cruz com 2 Carreira Cravejada Medio', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-cruz-com-2-carreiras-de-zirconias-cravejadas-1701186200.0088.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3556">
+                <h3>Pingente Cruz com 2 Carreira Cravejada Medio</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 34 - REF: 6771 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-texturizado-redondo-borda-cravejada-1758225784.0771.jpg" alt="Pingente São Jorge Texturizado Redondo Borda Cravejada Medio" onclick="openProductModal('6771', 'Pingente São Jorge Texturizado Redondo Borda Cravejada Medio', 109.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-texturizado-redondo-borda-cravejada-1758225784.0771.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Jorge Texturizado Redondo Borda Cravejada Medio', 109.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-jorge-texturizado-redondo-borda-cravejada-1758225784.0771.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6771">
+                <h3>Pingente São Jorge Texturizado Redondo Borda Cravejada Medio</h3>
+                <span class="price">R$ 109,90</span>
+            </div>
+        </div>
+
+
+        <!-- Produto 29 - REF: 3817 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-pai-nosso-cravejado-grande-1707335183.2661.jpg" alt="Pingente Pai Nosso Cravejado Grande" onclick="openProductModal('3817', 'Pingente Pai Nosso Cravejado Grande', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-pai-nosso-cravejado-grande-1707335183.2661.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Pai Nosso Cravejado Grande', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-pai-nosso-cravejado-grande-1707335183.2661.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3817">
+                <h3>Pingente Pai Nosso Cravejado Grande</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 30 - REF: 6395 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-borda-e-contra-argola-cravejada-1749476482.0494.jpg" alt="Pingente São Bento Borda e Contra Argola Cravejada Medio" onclick="openProductModal('6395', 'Pingente São Bento Borda e Contra Argola Cravejada Medio', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-borda-e-contra-argola-cravejada-1749476482.0494.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente São Bento Borda e Contra Argola Cravejada Medio', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-sao-bento-borda-e-contra-argola-cravejada-1749476482.0494.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6395">
+                <h3>Pingente São Bento Borda e Contra Argola Cravejada Medio</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 31 - REF: 6058 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-urso-medio-com-zirconia-rosa-1742391224.3967.jpg" alt="Pingente Urso Medio com Zirconia" onclick="openProductModal('6058', 'Pingente Urso Medio com Zirconia', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-urso-medio-com-zirconia-rosa-1742391224.3967.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Urso Medio com Zirconia', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-urso-medio-com-zirconia-rosa-1742391224.3967.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6058">
+                <h3>Pingente Urso Medio com Zirconia</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        
+
+        <!-- Produto 35 - REF: 923 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-1699535116.9652.jpg" alt="Pingente Coração Grande Liso" onclick="openProductModal('923', 'Pingente Coração Grande Liso', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-1699535116.9652.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Coração Grande Liso', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-1699535116.9652.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="923">
+                <h3>Pingente Coração Grande Liso</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 36 - REF: 5243 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-liso-grande-ouro-18k-1737056733.2347.jpg" alt="Pingente Coração Liso Grande" onclick="openProductModal('5243', 'Pingente Coração Liso Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-liso-grande-ouro-18k-1737056733.2347.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Coração Liso Grande', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-coracao-liso-grande-ouro-18k-1737056733.2347.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5243">
+                <h3>Pingente Coração Liso Grande</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 37 - REF: 7328 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-oracao-pai-nosso-com-bordas-diamantadas-1768506726.7376.jpg" alt="Pingente Moeda Oração Pai Nosso Bordas Diamantadas Medio" onclick="openProductModal('7328', 'Pingente Moeda Oração Pai Nosso Bordas Diamantadas Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-oracao-pai-nosso-com-bordas-diamantadas-1768506726.7376.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Moeda Oração Pai Nosso Bordas Diamantadas Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-oracao-pai-nosso-com-bordas-diamantadas-1768506726.7376.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="7328">
+                <h3>Pingente Moeda Oração Pai Nosso Bordas Diamantadas Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 38 - REF: 859 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-letra-extra-grande-ouro-18k-1693316379.6987.jpeg" alt="Pingente Letra Placa Extra Grande Medio" onclick="openProductModal('859', 'Pingente Letra Placa Extra Grande Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-letra-extra-grande-ouro-18k-1693316379.6987.jpeg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Placa Extra Grande Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-placa-letra-extra-grande-ouro-18k-1693316379.6987.jpeg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="859">
+                <h3>Pingente Letra Placa Extra Grande Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 39 - REF: 6522 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menina-cravejado-tam-p-1750451576.3999.jpg" alt="Pingente Menina Cravejada Pequena" onclick="openProductModal('6522', 'Pingente Menina Cravejada Pequena', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menina-cravejado-tam-p-1750451576.3999.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Menina Cravejada Pequena', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menina-cravejado-tam-p-1750451576.3999.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6522">
+                <h3>Pingente Menina Cravejada Pequena</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 40 - REF: 6513 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menino-cravejado-tam-p-1750451537.2296.jpg" alt="Pingente Menino Cravejado Pequena" onclick="openProductModal('6513', 'Pingente Menino Cravejado Pequena', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menino-cravejado-tam-p-1750451537.2296.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Menino Cravejado Pequena', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-menino-cravejado-tam-p-1750451537.2296.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6513">
+                <h3>Pingente Menino Cravejado Pequena</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 41 - REF: 3279 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-iemanja-1699535229.3619.jpg" alt="Pingente Moeda Iemanjá Medio" onclick="openProductModal('3279', 'Pingente Moeda Iemanjá Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-iemanja-1699535229.3619.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Moeda Iemanjá Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-moeda-iemanja-1699535229.3619.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3279">
+                <h3>Pingente Moeda Iemanjá Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 42 - REF: 3425 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-com-bordas-cravejadas--ouro-18k-1709041513.3974.jpg" alt="Pingente Letra Placa com Bordas Cravejadas Medio" onclick="openProductModal('3425', 'Pingente Letra Placa com Bordas Cravejadas Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-com-bordas-cravejadas--ouro-18k-1709041513.3974.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pingente Letra Placa com Bordas Cravejadas Medio', 89.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pingente-letra-placa-com-bordas-cravejadas--ouro-18k-1709041513.3974.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3425">
+                <h3>Pingente Letra Placa com Bordas Cravejadas Medio</h3>
+                <span class="price">R$ 89,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

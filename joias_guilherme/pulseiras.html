@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Pulseiras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header"><h2>Pulseiras Masculinas</h2><p>Elegância para o pulso</p></div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 2023 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2023">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-oitinho-2mm-com-fecho-canhao-1691085292.6851.jpg" alt="Pulseira Oitinho 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-oitinho-2mm-com-fecho-canhao-1752851282.085.jpg" alt="Pulseira Oitinho 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Oitinho 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-oitinho-2mm-com-fecho-canhao-1691085292.6851.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2023">
+                <h3>Pulseira Oitinho 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 4860 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-4860">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-2mm-fecho-canhao-1724185734.3674.jpg" alt="Pulseira Grumet 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-2mm-fecho-canhao-1752668089.4822.jpg" alt="Pulseira Grumet 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-2mm-fecho-canhao-1724185734.3674.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4860">
+                <h3>Pulseira Grumet 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 2150 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2150">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-2mm-f--lagosta-1690460396.8417.jpg" alt="Pulseira Piastrine 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-2mm-com-fecho-lagosta-1752675013.1942.jpg" alt="Pulseira Piastrine 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Piastrine 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-2mm-f--lagosta-1690460396.8417.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2150">
+                <h3>Pulseira Piastrine 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 1921 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1921">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-2mm-com-fecho-canhao-1691504772.9487.jpg" alt="Pulseira Veneziana 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-2mm-com-fecho-canhao-1752673267.6892.jpg" alt="Pulseira Veneziana 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Veneziana 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-2mm-com-fecho-canhao-1691504772.9487.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1921">
+                <h3>Pulseira Veneziana 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 1477 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1477">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-2mm-com-fecho-canhao-1691067732.6644.jpg" alt="Pulseira Cadeado 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-2mm-fecho-canhao-1755702580.7167.jpg" alt="Pulseira Cadeado 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-2mm-com-fecho-canhao-1691067732.6644.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1477">
+                <h3>Pulseira Cadeado 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 1245 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1245">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-2mm-com-fecho-canhao-1695828393.8165.jpg" alt="Pulseira Cadeado Alongado 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-2mm-com-fecho-canhao-1752234970.705.jpg" alt="Pulseira Cadeado Alongado 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Alongado 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-2mm-com-fecho-canhao-1695828393.8165.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1245">
+                <h3>Pulseira Cadeado Alongado 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 1916 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1916">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-tijolinho-2mm-com-fecho-gaveta-dupla-1749232835.451.jpg" alt="Pulseira Tijolinho 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-tijolinho-2mm-com-fecho-gaveta-dupla-1755178624.3084.jpg" alt="Pulseira Tijolinho 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Tijolinho 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-tijolinho-2mm-com-fecho-gaveta-dupla-1749232835.451.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1916">
+                <h3>Pulseira Tijolinho 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 1247 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1247">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-2mm-com-fecho-lagosta-1691581722.7555.jpg" alt="Pulseira 3x1 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-2mm-com-fecho-lagosta-1752235061.3765.jpg" alt="Pulseira 3x1 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira 3x1 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-2mm-com-fecho-lagosta-1691581722.7555.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1247">
+                <h3>Pulseira 3x1 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 1878 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1878">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-alongada-2mm-com-fecho-canhao-1692189638.4902.jpg" alt="Pulseira Veneziana Alongada 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-alongada-2mm-fecho-canhao-1752672860.002.jpg" alt="Pulseira Veneziana Alongada 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Veneziana Alongada 2mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-veneziana-alongada-2mm-com-fecho-canhao-1692189638.4902.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1878">
+                <h3>Pulseira Veneziana Alongada 2mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 4428 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-4428">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-2-5mm-fecho-canhao-1717187046.5448.jpg" alt="Pulseira Palmeira 2.5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-2-5mm-fecho-canhao-1755177352.5385.jpg" alt="Pulseira Palmeira 2.5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 2.5mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-2-5mm-fecho-canhao-1717187046.5448.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4428">
+                <h3>Pulseira Palmeira 2.5mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 2038 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2038">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-3mm-com-fecho-gaveta-trava-dupla-1697049445.1086.jpg" alt="Pulseira Cadeado Duplo 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-3mm-com-fecho-gaveta-trava-unica-1755178645.4666.jpg" alt="Pulseira Cadeado Duplo 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Duplo 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-3mm-com-fecho-gaveta-trava-dupla-1697049445.1086.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2038">
+                <h3>Pulseira Cadeado Duplo 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 2024 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2024">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-3mm-com-fecho-canhao-1691064788.6038.jpg" alt="Pulseira Cadeado 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-3mm-com-fecho-canhao-1755702606.6019.jpg" alt="Pulseira Cadeado 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-3mm-com-fecho-canhao-1691064788.6038.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2024">
+                <h3>Pulseira Cadeado 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 1877 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1877">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-flat-3mm-fecho-gaveta-trava-unica-1690463302.5836.jpg" alt="Pulseira Piastrine Flat 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-flat-3mm-com-fecho-gaveta-1752851350.0682.jpg" alt="Pulseira Piastrine Flat 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Piastrine Flat 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-flat-3mm-fecho-gaveta-trava-unica-1690463302.5836.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1877">
+                <h3>Pulseira Piastrine Flat 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 1884 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1884">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-3mm-com-fecho-canhao-1691507556.8127.jpg" alt="Pulseira Cadeado Alongado 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-3mm-fecho-canhao-1756212679.4927.jpg" alt="Pulseira Cadeado Alongado 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Alongado 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-3mm-com-fecho-canhao-1691507556.8127.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1884">
+                <h3>Pulseira Cadeado Alongado 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 2512 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2512">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-3mm-com-fecho-canhao-1691581829.7415.jpg" alt="Pulseira Cartier Abaulada 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-3mm-fecho-canhao-1752673068.9723.jpg" alt="Pulseira Cartier Abaulada 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cartier Abaulada 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-3mm-com-fecho-canhao-1691581829.7415.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2512">
+                <h3>Pulseira Cartier Abaulada 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 816 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-816">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-com-fecho-canhao-1691610434.8815.jpg" alt="Pulseira Cordão Baiano 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-f--canhao-1755177079.0306.jpg" alt="Pulseira Cordão Baiano 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-3mm-com-fecho-canhao-1691610434.8815.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="816">
+                <h3>Pulseira Cordão Baiano 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 1411 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1411">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-3mm-fecho-canhao-1691675105.6685.jpg" alt="Pulseira Palmeira 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-3mm-fecho-canhao-1755177327.7861.jpg" alt="Pulseira Palmeira 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-3mm-fecho-canhao-1691675105.6685.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1411">
+                <h3>Pulseira Palmeira 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 1893 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1893">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-com-fecho-canhao-1691672814.4453.jpg" alt="Pulseira Cordão Baiano 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-f--canhao-sanfonado-1756213570.4778.jpg" alt="Pulseira Cordão Baiano 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 4mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-com-fecho-canhao-1691672814.4453.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1893">
+                <h3>Pulseira Cordão Baiano 4mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 2760 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2760">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-3mm-com-fecho-gaveta-trava-unica-1692892894.8598.jpg" alt="Pulseira Piastrine 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-3mm-fecho-gaveta-trava-unica-1760727481.8402.jpg" alt="Pulseira Piastrine 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Piastrine 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-piastrine-3mm-com-fecho-gaveta-trava-unica-1692892894.8598.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2760">
+                <h3>Pulseira Piastrine 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 2759 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2759">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-com-fecho-gaveta-trava-unica-1692892961.6152.jpg" alt="Pulseira Grumet Dupla 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-fecho-gaveta-1752672625.3726.jpg" alt="Pulseira Grumet Dupla 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-3mm-com-fecho-gaveta-trava-unica-1692892961.6152.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2759">
+                <h3>Pulseira Grumet Dupla 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 21 - REF: 1246 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1246">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-4mm-com-fecho-canhao-1691581546.5144.jpg" alt="Pulseira Cartier Abaulada 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-4mm-fecho-canhao-1752234988.0993.jpg" alt="Pulseira Cartier Abaulada 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cartier Abaulada 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-4mm-com-fecho-canhao-1691581546.5144.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1246">
+                <h3>Pulseira Cartier Abaulada 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 22 - REF: 1976 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1976">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-4mm-com-fecho-canhao-1691506663.9737.jpg" alt="Pulseira Cadeado Alongado 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-4mm-com-fecho-canhao-1752671374.6085.jpg" alt="Pulseira Cadeado Alongado 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Alongado 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-4mm-com-fecho-canhao-1691506663.9737.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1976">
+                <h3>Pulseira Cadeado Alongado 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 23 - REF: 2019 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2019">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-4mm-com-fecho-canhao-1691064721.2629.jpg" alt="Pulseira Cadeado 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-4mm-f--canhao-1755706036.2171.jpg" alt="Pulseira Cadeado 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-4mm-com-fecho-canhao-1691064721.2629.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2019">
+                <h3>Pulseira Cadeado 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 24 - REF: 2388 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2388">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1720712267.9776.jpg" alt="Pulseira Grumet Dupla 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-fecho-gaveta-1752846227.2667.jpg" alt="Pulseira Grumet Dupla 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1720712267.9776.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2388">
+                <h3>Pulseira Grumet Dupla 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 25 - REF: 2971 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2971">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-com-fecho-gaveta-trava-dupla-1694613611.877.jpg" alt="Pulseira Grumet 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-fecho-gaveta-trava-dupla-1752847343.2976.jpg" alt="Pulseira Grumet 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-4mm-com-fecho-gaveta-trava-dupla-1694613611.877.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2971">
+                <h3>Pulseira Grumet 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 26 - REF: 1894 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1894">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-fecho-canhao-1717184367.353.jpg" alt="Pulseira Cordão Baiano 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-f-canhao-1755177106.1964.jpg" alt="Pulseira Cordão Baiano 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-4mm-fecho-canhao-1717184367.353.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1894">
+                <h3>Pulseira Cordão Baiano 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 27 - REF: 801 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-801">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-4mm-com-fecho-gaveta-trava-dupla-1699288939.5407.jpg" alt="Pulseira 3x1 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-4mm-com-fecho-gaveta-trava-dupla-1752496683.2409.jpg" alt="Pulseira 3x1 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira 3x1 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-4mm-com-fecho-gaveta-trava-dupla-1699288939.5407.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="801">
+                <h3>Pulseira 3x1 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 28 - REF: 1804 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1804">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-4mm-com-fecho-gaveta-trava-dupla-1691091034.2626.jpg" alt="Pulseira Cubana 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-4mm-fecho-gaveta-trava-dupla-1752672709.0182.jpg" alt="Pulseira Cubana 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cubana 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-4mm-com-fecho-gaveta-trava-dupla-1691091034.2626.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1804">
+                <h3>Pulseira Cubana 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 29 - REF: 2639 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1692189722.732.jpg" alt="Pulseira Grumet Dupla 4mm" onclick="openProductModal('2639', 'Pulseira Grumet Dupla 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1692189722.732.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1692189722.732.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2639">
+                <h3>Pulseira Grumet Dupla 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 30 - REF: 1405 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1405">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-com-fecho-canhao-1691692607.5012.jpg" alt="Pulseira Palmeira 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-fecho-canhao-1760727387.9963.jpg" alt="Pulseira Palmeira 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 4mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-4mm-com-fecho-canhao-1691692607.5012.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1405">
+                <h3>Pulseira Palmeira 4mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 31 - REF: 849 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-849">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-5mm-fecho-gaveta-dupla-1718040401.5227.jpg" alt="Pulseira Cadeado Duplo 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-5mm-fecho-gaveta-duplo-1755177921.5672.jpg" alt="Pulseira Cadeado Duplo 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Duplo 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-5mm-fecho-gaveta-dupla-1718040401.5227.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="849">
+                <h3>Pulseira Cadeado Duplo 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 32 - REF: 1914 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1914">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-com-fecho-canhao-1691505902.6421.jpg" alt="Pulseira Meia Corda 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-f--canhao-1752675115.3616.jpg" alt="Pulseira Meia Corda 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Meia Corda 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-meia-corda-5mm-com-fecho-canhao-1691505902.6421.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1914">
+                <h3>Pulseira Meia Corda 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 33 - REF: 1248 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1248">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-5mm-com-fecho-canhao-1691507394.6717.jpg" alt="Pulseira Cadeado Alongado 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-5mm-com-fecho-canhao-1760727363.693.jpg" alt="Pulseira Cadeado Alongado 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Alongado 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-5mm-com-fecho-canhao-1691507394.6717.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1248">
+                <h3>Pulseira Cadeado Alongado 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 34 - REF: 1094 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1094">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-5mm-com-fecho-gaveta-trava-dupla-1691512252.4528.jpg" alt="Pulseira 3x1 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-5mm-fecho-gaveta-trava-dupla-1755177284.6634.jpg" alt="Pulseira 3x1 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira 3x1 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-5mm-com-fecho-gaveta-trava-dupla-1691512252.4528.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1094">
+                <h3>Pulseira 3x1 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 35 - REF: 953 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-953">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-alongado-5mm-com-fecho-trava-dupla-1691581674.3749.jpg" alt="Pulseira Elo Alongado 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-alongado-5mm-fecho-trava-dupla-1752675892.4511.jpg" alt="Pulseira Elo Alongado 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Elo Alongado 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-elo-alongado-5mm-com-fecho-trava-dupla-1691581674.3749.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="953">
+                <h3>Pulseira Elo Alongado 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 36 - REF: 2021 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2021">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-5mm-com-fecho-canhao-1690912751.1976.jpg" alt="Pulseira Cadeado 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-5mm-com-fecho-canhao-1755702526.5556.jpg" alt="Pulseira Cadeado 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-5mm-com-fecho-canhao-1690912751.1976.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2021">
+                <h3>Pulseira Cadeado 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 37 - REF: 1891 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1891">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-com-fecho-canhao-sanfonado-1691610379.3117.jpg" alt="Pulseira Cordão Baiano 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-f--canhao-sanf--1755178853.2813.jpg" alt="Pulseira Cordão Baiano 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-5mm-com-fecho-canhao-sanfonado-1691610379.3117.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1891">
+                <h3>Pulseira Cordão Baiano 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 38 - REF: 218 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-218">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-5mm-fecho-canhao-1737729826.3639.jpg" alt="Pulseira Cartier Abaulada 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-5mm-fecho-canhao-1752496758.0626.jpg" alt="Pulseira Cartier Abaulada 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cartier Abaulada 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-5mm-fecho-canhao-1737729826.3639.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="218">
+                <h3>Pulseira Cartier Abaulada 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 39 - REF: 2427 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2427">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-5mm-fecho-canhao-1758215493.2724.jpg" alt="Pulseira Palmeira 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-5mm-fecho-canhao-1752673348.1936.jpg" alt="Pulseira Palmeira 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 5mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-5mm-fecho-canhao-1758215493.2724.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2427">
+                <h3>Pulseira Palmeira 5mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 40 - REF: 5857 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-5857">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-6mm-fecho-canhao-1737730402.6722.jpg" alt="Pulseira Cartier Abaulada 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-6mm-fecho-canhao-1756212089.7311.jpg" alt="Pulseira Cartier Abaulada 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cartier Abaulada 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-6mm-fecho-canhao-1737730402.6722.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5857">
+                <h3>Pulseira Cartier Abaulada 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 41 - REF: 1099 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1099">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-6mm-com-fecho-canhao-1690489837.1939.jpg" alt="Pulseira Cadeado 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-6mm-com-fecho-canhao-1755705955.038.jpg" alt="Pulseira Cadeado 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-6mm-com-fecho-canhao-1690489837.1939.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1099">
+                <h3>Pulseira Cadeado 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 42 - REF: 2549 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2549">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-6mm-fecho-gaveta-trava-dupla-1691504697.7224.jpg" alt="Pulseira Cubana 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-6mm-fecho-gaveta-trava-dupla-1755177249.6074.jpg" alt="Pulseira Cubana 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cubana 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cubana-6mm-fecho-gaveta-trava-dupla-1691504697.7224.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2549">
+                <h3>Pulseira Cubana 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 43 - REF: 1975 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1975">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-6mm-com-fecho-canhao-1691507702.2508.jpg" alt="Pulseira Cadeado Alongado 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-6mm-com-fecho-canhao-1752675358.5379.jpg" alt="Pulseira Cadeado Alongado 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Alongado 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-alongado-6mm-com-fecho-canhao-1691507702.2508.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1975">
+                <h3>Pulseira Cadeado Alongado 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 44 - REF: 1195 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1195">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-gaveta-trava-dupla-1695828361.7054.jpg" alt="Pulseira Grumet Dupla 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-gaveta-dupla-1761680267.127.jpg" alt="Pulseira Grumet Dupla 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-6mm-fecho-gaveta-trava-dupla-1695828361.7054.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1195">
+                <h3>Pulseira Grumet Dupla 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 45 - REF: 3846 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-3846">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1711033687.6226.jpg" alt="Pulseira Grumet Detalhada 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1755178814.6897.jpg" alt="Pulseira Grumet Detalhada 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Detalhada 6mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1711033687.6226.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3846">
+                <h3>Pulseira Grumet Detalhada 6mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 46 - REF: 2566 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2566">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-com-fecho-canhao-1691610484.2799.jpg" alt="Pulseira Cordão Baiano 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-fecho-canhao-1761915801.4329.jpg" alt="Pulseira Cordão Baiano 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cordão Baiano 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cordao-baiano-6mm-com-fecho-canhao-1691610484.2799.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2566">
+                <h3>Pulseira Cordão Baiano 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 47 - REF: 1901 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-f-canhao-1763756267.0556.jpg" alt="Pulseira Palmeira 6mm" onclick="openProductModal('1901', 'Pulseira Palmeira 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-f-canhao-1763756267.0556.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Palmeira 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-palmeira-6mm-f-canhao-1763756267.0556.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1901">
+                <h3>Pulseira Palmeira 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 48 - REF: 834 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-834">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-7mm-fecho-gaveta-dupla-1708462080.683.jpg" alt="Pulseira Grumet Dupla 7mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-7mm-fecho-gaveta-dupla-1752498966.918.jpg" alt="Pulseira Grumet Dupla 7mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 7mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-7mm-fecho-gaveta-dupla-1708462080.683.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="834">
+                <h3>Pulseira Grumet Dupla 7mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 49 - REF: 2032 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2032">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-8mm-oca-com-fecho-gaveta-duplo-1705412891.6727.jpg" alt="Pulseira Grumet Dupla 8mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-8mm-oca-f--gaveta-1752668431.3417.jpg" alt="Pulseira Grumet Dupla 8mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 8mm', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-8mm-oca-com-fecho-gaveta-duplo-1705412891.6727.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2032">
+                <h3>Pulseira Grumet Dupla 8mm</h3>
+                <span class="price">R$ 229,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 50 - REF: 6608 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-6608">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-8mm-fecho-gaveta-duplo-1754053569.2828.jpg" alt="Pulseira Cadeado Duplo 8mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-8mm-fecho-gaveta-duplo-1761679147.875.jpg" alt="Pulseira Cadeado Duplo 8mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado Duplo 8mm', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-duplo-8mm-fecho-gaveta-duplo-1754053569.2828.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6608">
+                <h3>Pulseira Cadeado Duplo 8mm</h3>
+                <span class="price">R$ 229,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 51 - REF: 2148 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-8mm-fecho-gaveta-1756213228.7566.jpg" alt="Pulseira Cadeado 8mm" onclick="openProductModal('2148', 'Pulseira Cadeado 8mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-8mm-fecho-gaveta-1756213228.7566.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cadeado 8mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cadeado-8mm-fecho-gaveta-1756213228.7566.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2148">
+                <h3>Pulseira Cadeado 8mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 52 - REF: 1883 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1883">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-9mm-com-fecho-canhao-1691513329.8257.jpg" alt="Pulseira Cartier Abaulada 9mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-9mm-f--canhao-1755702488.9185.jpg" alt="Pulseira Cartier Abaulada 9mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Cartier Abaulada 9mm', 249.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-cartier-abaulada-9mm-com-fecho-canhao-1691513329.8257.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1883">
+                <h3>Pulseira Cartier Abaulada 9mm</h3>
+                <span class="price">R$ 249,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 53 - REF: 2034 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2034">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-oca-10mm-com-fecho-gaveta-trava-dupla-1692297019.475.jpg" alt="Pulseira Grumet Dupla 10mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-10mm-oca-f--gaveta-1752851021.9382.jpg" alt="Pulseira Grumet Dupla 10mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira Grumet Dupla 10mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-grumet-dupla-oca-10mm-com-fecho-gaveta-trava-dupla-1692297019.475.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2034">
+                <h3>Pulseira Grumet Dupla 10mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 54 - REF: 1583 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1583">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-12mm-com-fecho-gaveta-trava-unica-1691506590.6677.jpg" alt="Pulseira 3x1 13mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-12mm-com-fecho-gaveta-trava-unica-1755178520.2971.jpg" alt="Pulseira 3x1 13mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Pulseira 3x1 13mm', 299.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/pulseira-3x1-12mm-com-fecho-gaveta-trava-unica-1691506590.6677.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1583">
+                <h3>Pulseira 3x1 13mm</h3>
+                <span class="price">R$ 299,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

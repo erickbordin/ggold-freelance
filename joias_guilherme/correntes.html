@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Correntes</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 3546 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-laminado-2mm-com-fecho-canhao-1701182780.1629.jpg" alt="Corrente Cadeado Laminado 2mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Laminado 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-laminado-2mm-com-fecho-canhao-1701182780.1629.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3546">
+                <h3>Corrente Cadeado Laminado 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 560 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-560">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-2mm-com-fecho-canhao-1691067670.9839.jpg" alt="Corrente Cadeado 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-2mm-com-fecho-canhao-1763041994.5335.jpg" alt="Corrente Cadeado 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-2mm-com-fecho-canhao-1691067670.9839.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="560">
+                <h3>Corrente Cadeado 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 728 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-728">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-2mm-com-fecho-canhao-1698787145.7946.jpg" alt="Corrente Cadeado Alongado 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-2mm-fecho-canhao-1763038589.1533.jpg" alt="Corrente Cadeado Alongado 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Alongado 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-2mm-com-fecho-canhao-1698787145.7946.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="728">
+                <h3>Corrente Cadeado Alongado 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 1822 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-oitinho-2mm-com-fecho-canhao-1691505845.2543.jpg" alt="Corrente Oitinho 2mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Oitinho 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-oitinho-2mm-com-fecho-canhao-1691505845.2543.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1822">
+                <h3>Corrente Oitinho 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 611 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-2mm-com-fecho-lagosta-1691581138.6665.jpg" alt="Corrente 3x1 2mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente 3x1 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-2mm-com-fecho-lagosta-1691581138.6665.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="611">
+                <h3>Corrente 3x1 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 2033 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2033">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-2mm-com-fecho-lagosta-1707322401.2038.jpg" alt="Corrente Piastrine 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-2mm-com-fecho-lagosta-1755790199.5777.jpg" alt="Corrente Piastrine 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Piastrine 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-2mm-com-fecho-lagosta-1707322401.2038.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2033">
+                <h3>Corrente Piastrine 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 4859 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-4859">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-2mm-fecho-canhao-1724185707.7494.jpg" alt="Corrente Grumet 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-2mm-fecho-canhao-1763041350.4556.jpg" alt="Corrente Grumet 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-2mm-fecho-canhao-1724185707.7494.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4859">
+                <h3>Corrente Grumet 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 1875 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1875">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-alongada-2mm-com-fecho-canhao-1691699999.7047.jpg" alt="Corrente Veneziana Alongada 2mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-alongada-2mm-com-fecho-canhao-1763041114.3664.jpg" alt="Corrente Veneziana Alongada 2mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Veneziana Alongada 2mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-alongada-2mm-com-fecho-canhao-1691699999.7047.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1875">
+                <h3>Corrente Veneziana Alongada 2mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 4427 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-2-5mm-fecho-canhao-1717011617.9024.jpg" alt="Corrente Palmeira 2.5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Palmeira 2.5mm', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-2-5mm-fecho-canhao-1717011617.9024.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4427">
+                <h3>Corrente Palmeira 2.5mm</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 3010 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-3mm-fecho-canhao-1694613561.5071.jpg" alt="Corrente Cartier Abaulada 3mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier Abaulada 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-3mm-fecho-canhao-1694613561.5071.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3010">
+                <h3>Corrente Cartier Abaulada 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 1876 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1876">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-flat-3mm-com-fecho-gaveta-1690464676.5735.jpg" alt="Corrente Piastrine Flat 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-flat-3mm-com-fecho-gaveta-trava-unica-1755790256.5596.jpg" alt="Corrente Piastrine Flat 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Piastrine Flat 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-flat-3mm-com-fecho-gaveta-1690464676.5735.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1876">
+                <h3>Corrente Piastrine Flat 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 65 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-65">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-3mm-com-fecho-canhao-1691068012.0824.jpg" alt="Corrente Cadeado 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-3mm-com-fecho-canhao-1763040833.7162.jpg" alt="Corrente Cadeado 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-3mm-com-fecho-canhao-1691068012.0824.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="65">
+                <h3>Corrente Cadeado 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 1977 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1977">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-3mm-com-fecho-canhao-1691581247.4875.jpg" alt="Corrente Cadeado Alongado 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-3mm-com-fecho-canhao-1763039687.413.jpg" alt="Corrente Cadeado Alongado 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Alongado 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-3mm-com-fecho-canhao-1691581247.4875.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1977">
+                <h3>Corrente Cadeado Alongado 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 2757 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2757">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-3mm-fecho-gaveta-trava-unica-1692723902.3018.jpg" alt="Corrente Piastrine 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-3mm-com-fecho-gaveta-trava-unica-1755790125.4555.jpg" alt="Corrente Piastrine 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Piastrine 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-piastrine-3mm-fecho-gaveta-trava-unica-1692723902.3018.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2757">
+                <h3>Corrente Piastrine 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 1922 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-3mm-fecho-gaveta-trava-unica-1748874924.244.jpg" alt="Corrente Cadeado Duplo 3mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Duplo 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-3mm-fecho-gaveta-trava-unica-1748874924.244.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1922">
+                <h3>Corrente Cadeado Duplo 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 1410 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-3mm-com-fecho-canhao-1691693904.3321.jpg" alt="Corrente Palmeira 3mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Palmeira 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-3mm-com-fecho-canhao-1691693904.3321.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1410">
+                <h3>Corrente Palmeira 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 369 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-369">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-tijolinho-3mm-fecho-gaveta-1691676690.0445.jpg" alt="Corrente Veneziana Tijolinho 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-tijolinho-3mm-fecho-gaveta-1763040949.5095.jpg" alt="Corrente Veneziana Tijolinho 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Veneziana Tijolinho 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-veneziana-tijolinho-3mm-fecho-gaveta-1691676690.0445.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="369">
+                <h3>Corrente Veneziana Tijolinho 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 2758 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2758">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-3mm-com-fecho-gaveta-trava-dupla-1725994252.2895.jpg" alt="Corrente Grumet Dupla 3mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-3mm-com-fecho-gaveta-trava-dupla-1763039757.8732.jpg" alt="Corrente Grumet Dupla 3mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-3mm-com-fecho-gaveta-trava-dupla-1725994252.2895.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2758">
+                <h3>Corrente Grumet Dupla 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 3034 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-3mm-fecho-gaveta-trava-unica-1717011634.2218.jpg" alt="Corrente 3x1 3mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente 3x1 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-3mm-fecho-gaveta-trava-unica-1717011634.2218.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3034">
+                <h3>Corrente 3x1 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 1889 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-3mm-com-fecho-canhao-1691589562.2344.jpg" alt="Corrente Cordão Baiano 3mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cordão Baiano 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-3mm-com-fecho-canhao-1691589562.2344.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1889">
+                <h3>Corrente Cordão Baiano 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 21 - REF: 1818 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-4mm-fecho-gaveta-1701182700.1979.jpg" alt="Corrente Cadeado Duplo 4mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Duplo 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-4mm-fecho-gaveta-1701182700.1979.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1818">
+                <h3>Corrente Cadeado Duplo 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 22 - REF: 1813 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1813">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-4mm-com-fecho-canhao-1691508259.5981.jpg" alt="Corrente Cadeado Alongado 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-4mm-com-fecho-canhao-1763039115.21.jpg" alt="Corrente Cadeado Alongado 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Alongado 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-4mm-com-fecho-canhao-1691508259.5981.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1813">
+                <h3>Corrente Cadeado Alongado 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 23 - REF: 1870 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1870">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-4mm-com-fecho-canhao-1690912332.754.jpg" alt="Corrente Cadeado 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-4mm-com-fecho-canhao-1763041085.0583.jpg" alt="Corrente Cadeado 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-4mm-com-fecho-canhao-1690912332.754.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1870">
+                <h3>Corrente Cadeado 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 24 - REF: 797 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-4mm-com-fecho-gaveta-trava-dupla-1699288883.8898.jpg" alt="Corrente 3x1 4mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente 3x1 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-4mm-com-fecho-gaveta-trava-dupla-1699288883.8898.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="797">
+                <h3>Corrente 3x1 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 25 - REF: 23 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-4mm-com-fecho-canhao-1691581340.8602.jpg" alt="Corrente Cartier Abaulada 4mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier Abaulada 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-4mm-com-fecho-canhao-1691581340.8602.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="23">
+                <h3>Corrente Cartier Abaulada 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 26 - REF: 1809 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1809">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1720712230.4872.jpg" alt="Corrente Grumet Dupla 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1763039054.0524.jpg" alt="Corrente Grumet Dupla 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-4mm-com-fecho-gaveta-trava-dupla-1720712230.4872.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1809">
+                <h3>Corrente Grumet Dupla 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 27 - REF: 2970 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-4mm-com-fecho-gaveta-trava-dupla-1694541797.6107.jpg" alt="Corrente Grumet 4mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-4mm-com-fecho-gaveta-trava-dupla-1694541797.6107.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2970">
+                <h3>Corrente Grumet 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 28 - REF: 1404 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1404">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-4mm-com-fecho-canhao-1691675266.1771.jpg" alt="Corrente Palmeira 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-4mm-com-fecho-canhao-1691675266.4748.jpg" alt="Corrente Palmeira 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Palmeira 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-4mm-com-fecho-canhao-1691675266.1771.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1404">
+                <h3>Corrente Palmeira 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 29 - REF: 2393 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-4mm-com-fecho-canhao-1691673940.9477.jpg" alt="Corrente Cordão Baiano 4mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cordão Baiano 4mm', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-4mm-com-fecho-canhao-1691673940.9477.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2393">
+                <h3>Corrente Cordão Baiano 4mm</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 30 - REF: 1789 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1789">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-4mm-com-fecho-gaveta-trava-dupla-1691504557.8337.jpg" alt="Corrente Cubana 4mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-4mm-fecho-gaveta-trava-dupla-1755790034.6177.jpg" alt="Corrente Cubana 4mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cubana 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-4mm-com-fecho-gaveta-trava-dupla-1691504557.8337.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1789">
+                <h3>Corrente Cubana 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 31 - REF: 617 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-5mm-com-fecho-gaveta-dupla-1690467368.6345.jpg" alt="Corrente Cadeado Duplo 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Duplo 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-5mm-com-fecho-gaveta-dupla-1690467368.6345.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="617">
+                <h3>Corrente Cadeado Duplo 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 32 - REF: 80 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-80">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-5mm-com-fecho-canhao-1702582431.2315.jpg" alt="Corrente Cadeado Alongado 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-5mm-com-fecho-canhao-1763038667.9745.jpg" alt="Corrente Cadeado Alongado 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Alongado 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-alongado-5mm-com-fecho-canhao-1702582431.2315.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="80">
+                <h3>Corrente Cadeado Alongado 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 33 - REF: 273 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-elo-alongado-5mm-com-fecho-gaveta-dupla-1691514107.0954.jpg" alt="Corrente Elo Alongado (Cartier) 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Elo Alongado (Cartier) 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-elo-alongado-5mm-com-fecho-gaveta-dupla-1691514107.0954.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="273">
+                <h3>Corrente Elo Alongado (Cartier) 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 34 - REF: 1092 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-5mm-com-fecho-gaveta-trava-dupla-1691508856.4648.jpg" alt="Corrente 3x1 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente 3x1 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-3x1-5mm-com-fecho-gaveta-trava-dupla-1691508856.4648.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1092">
+                <h3>Corrente 3x1 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 35 - REF: 1 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-meia-corda-5mm-com-fecho-canhao-1691086204.7465.jpg" alt="Corrente Meia Corda 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-meia-corda-5mm-com-fecho-canhao-1755789944.2202.jpg" alt="Corrente Meia Corda 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Meia Corda 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-meia-corda-5mm-com-fecho-canhao-1691086204.7465.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1">
+                <h3>Corrente Meia Corda 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 36 - REF: 1899 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-5mm-com-fecho-canhao-1691675221.5201.jpg" alt="Corrente Palmeira 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Palmeira 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-5mm-com-fecho-canhao-1691675221.5201.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1899">
+                <h3>Corrente Palmeira 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 37 - REF: 216 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-5mm-fecho-canhao-1737729959.9514.jpg" alt="Corrente Cartier Abaulada 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier Abaulada 5mm', 259.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-5mm-fecho-canhao-1737729959.9514.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="216">
+                <h3>Corrente Cartier Abaulada 5mm</h3>
+                <span class="price">R$ 259,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 38 - REF: 1887 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-5mm-f--canhao--1691589616.3452.jpg" alt="Corrente Cordão Baiano 5mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cordão Baiano 5mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cordao-baiano-5mm-f--canhao--1691589616.3452.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1887">
+                <h3>Corrente Cordão Baiano 5mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 39 - REF: 1329 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1329">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-5mm-com-fecho-canhao-1690912253.7429.jpg" alt="Corrente Cadeado 5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-5mm-fecho-canhao-1763041056.2595.jpg" alt="Corrente Cadeado 5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 5mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-5mm-com-fecho-canhao-1690912253.7429.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1329">
+                <h3>Corrente Cadeado 5mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 40 - REF: 1900 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-6mm-com-fecho-canhao-1763756453.2509.jpg" alt="Corrente Palmeira 6mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Palmeira 6mm', 319.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-palmeira-6mm-com-fecho-canhao-1763756453.2509.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1900">
+                <h3>Corrente Palmeira 6mm</h3>
+                <span class="price">R$ 319,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 41 - REF: 1193 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-6mm-fecho-canhao-1737730190.4479.jpg" alt="Corrente Cartier Abaulada 6mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier Abaulada 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-6mm-fecho-canhao-1737730190.4479.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1193">
+                <h3>Corrente Cartier Abaulada 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 42 - REF: 1193B (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1193b">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-6mm-com-fecho-gaveta-dupla-1692894147.5068.jpg" alt="Corrente Grumet Dupla 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-6mm-com-fecho-gaveta-trava-dupla-1763038803.1944.jpg" alt="Corrente Grumet Dupla 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-6mm-com-fecho-gaveta-dupla-1692894147.5068.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1193b">
+                <h3>Corrente Grumet Dupla 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 43 - REF: 1098 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1098">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-6mm-fecho-canhao-1690909257.6314.jpg" alt="Corrente Cadeado 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-6mm-com-fecho-canhao-1763041020.9778.jpg" alt="Corrente Cadeado 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-6mm-fecho-canhao-1690909257.6314.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1098">
+                <h3>Corrente Cadeado 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 44 - REF: 3845 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-3845">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1710965979.6002.jpg" alt="Corrente Grumet Detalhada 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1761915707.633.jpg" alt="Corrente Grumet Detalhada 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Detalhada 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-detalhada-6mm-fecho-gaveta-trava-dupla-1710965979.6002.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3845">
+                <h3>Corrente Grumet Detalhada 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 45 - REF: 2548 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2548">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-6mm-com-fecho-gaveta-dupla-1691088172.339.jpg" alt="Corrente Cubana 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-6mm-com-fecho-gaveta-dupla-1755785573.537.jpg" alt="Corrente Cubana 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cubana 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cubana-6mm-com-fecho-gaveta-dupla-1691088172.339.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2548">
+                <h3>Corrente Cubana 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 46 - REF: 1917 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1917">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-6mm-com-fecho-gaveta-trava-dupla-1692189859.8579.jpg" alt="Corrente Grumet Union 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-6mm-com-fecho-gaveta-trava-dupla-1763039478.0698.jpg" alt="Corrente Grumet Union 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Union 6mm', 279.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-6mm-com-fecho-gaveta-trava-dupla-1692189859.8579.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1917">
+                <h3>Corrente Grumet Union 6mm</h3>
+                <span class="price">R$ 279,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 47 - REF: 2544 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2544">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-7mm-com-fecho-gaveta-trava-dupla-1692898504.4204.jpg" alt="Corrente Grumet 7mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-7mm-com-fecho-gaveta-trava-dupla-1763041242.7401.jpg" alt="Corrente Grumet 7mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet 7mm', 319.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-7mm-com-fecho-gaveta-trava-dupla-1692898504.4204.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2544">
+                <h3>Corrente Grumet 7mm</h3>
+                <span class="price">R$ 319,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 48 - REF: 1897 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1897">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-7mm-com-fecho-gaveta-trava-dupla-1692216700.1808.jpg" alt="Corrente Grumet Dupla 7mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-7mm-com-fecho-gaveta-trava-dupla-1763039285.1264.jpg" alt="Corrente Grumet Dupla 7mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 7mm', 319.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-7mm-com-fecho-gaveta-trava-dupla-1692216700.1808.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1897">
+                <h3>Corrente Grumet Dupla 7mm</h3>
+                <span class="price">R$ 319,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 49 - REF: 1902 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1902">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-8mm-oca-com-fecho-gaveta-trava-dupla-1692894485.8777.jpg" alt="Corrente Grumet Dupla 8mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-8mm-oca-fecho-gaveta-1763039359.2013.jpg" alt="Corrente Grumet Dupla 8mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 8mm', 449.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-8mm-oca-com-fecho-gaveta-trava-dupla-1692894485.8777.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1902">
+                <h3>Corrente Grumet Dupla 8mm</h3>
+                <span class="price">R$ 449,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 50 - REF: 6607 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-8mm-f--gav--duplo-1754053663.1245.jpg" alt="Corrente Cadeado Duplo 8mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado Duplo 8mm', 449.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-duplo-8mm-f--gav--duplo-1754053663.1245.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6607">
+                <h3>Corrente Cadeado Duplo 8mm</h3>
+                <span class="price">R$ 449,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 51 - REF: 1598 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-8mm-com-fecho-trava-unica-1690909619.5745.jpg" alt="Corrente Cadeado 8mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cadeado 8mm', 549.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cadeado-8mm-com-fecho-trava-unica-1690909619.5745.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1598">
+                <h3>Corrente Cadeado 8mm</h3>
+                <span class="price">R$ 549,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 52 - REF: 1918 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-1918">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-8mm-fecho-gaveta-trava-dupla-1692190146.8977.jpg" alt="Corrente Grumet Union 8mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-8mm-fecho-gaveta-trava-dupla-1763039539.6864.jpg" alt="Corrente Grumet Union 8mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Union 8mm', 349.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-union-8mm-fecho-gaveta-trava-dupla-1692190146.8977.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1918">
+                <h3>Corrente Grumet Union 8mm</h3>
+                <span class="price">R$ 349,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 53 - REF: 1816 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-9mm-com-fecho-canhao-1691581380.2652.jpg" alt="Corrente Cartier Abaulada 9mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Cartier Abaulada 9mm', 399.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-cartier-abaulada-9mm-com-fecho-canhao-1691581380.2652.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1816">
+                <h3>Corrente Cartier Abaulada 9mm</h3>
+                <span class="price">R$ 399,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 54 - REF: 1910 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-9mm-com-fecho-gaveta-1692296251.0981.jpg" alt="Corrente Grumet Dupla 9mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet Dupla 9mm', 349.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-dupla-9mm-com-fecho-gaveta-1692296251.0981.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1910">
+                <h3>Corrente Grumet Dupla 9mm</h3>
+                <span class="price">R$ 349,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 55 - REF: 390 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-oca-10mm-com-fecho-gaveta-dupla-1692724117.9347.jpg" alt="Corrente Grumet 10mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Grumet 10mm', 469.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-grumet-oca-10mm-com-fecho-gaveta-dupla-1692724117.9347.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="390">
+                <h3>Corrente Grumet 10mm</h3>
+                <span class="price">R$ 469,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 56 - REF: 379 (1 imagem) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-friso-s-13mm-com-fecho-gaveta-trava-dupla-1691504921.0879.jpg" alt="Corrente Friso 13mm">
+                <button class="btn-add-cart" onclick="addToCart('Corrente Friso 13mm', 439.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/corrente-friso-s-13mm-com-fecho-gaveta-trava-dupla-1691504921.0879.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="379">
+                <h3>Corrente Friso 13mm</h3>
+                <span class="price">R$ 439,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

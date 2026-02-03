@@ -1,0 +1,209 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ggold | Brincos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+            
+            <nav class="desktop-nav">
+                <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                    <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+            <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                    <span>Pulseiras</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                    <span>Anéis</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="aneis-mobile" class="mobile-dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </div>
+
+        <section class="mini-hero">
+            <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+            <div class="hero-content">
+                <h1>GGOLD JOIAS</h1>
+                <p>Elegância em cada detalhe.</p>
+            </div>
+        </section>
+
+        <div class="page-header"><h2>Anéis Masculinos</h2><p>Detalhes que iluminam</p></div>
+
+        <section class="product-grid">
+            <!-- Produto 1 - REF: 5007 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-1737463864.228.jpg" alt="Anel Quadrado São Jorge" onclick="openProductModal('5007', 'Anel Quadrado São Jorge', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-1737463864.228.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Quadrado São Jorge', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-1737463864.228.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5007">
+                    <h3>Anel Quadrado São Jorge</h3>
+                    <span class="price">R$ 229,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 2 - REF: 5475 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-sao-bento-com-2-fileiras-de-pedras-zirconia-1737463948.7697.jpg" alt="Anel São Bento com 2 Fileiras de Pedras Zirconia" onclick="openProductModal('5475', 'Anel São Bento com 2 Fileiras de Pedras Zirconia', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-sao-bento-com-2-fileiras-de-pedras-zirconia-1737463948.7697.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel São Bento com 2 Fileiras de Pedras Zirconia', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-sao-bento-com-2-fileiras-de-pedras-zirconia-1737463948.7697.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5475">
+                    <h3>Anel São Bento com 2 Fileiras de Pedras Zirconia</h3>
+                    <span class="price">R$ 179,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 3 - REF: 5477 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-pedra-retangular-branca-1737464386.9188.jpg" alt="Anel Pedra Retangular Branca" onclick="openProductModal('5477', 'Anel Pedra Retangular Branca', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-pedra-retangular-branca-1737464386.9188.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Pedra Retangular Branca', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-pedra-retangular-branca-1737464386.9188.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="5477">
+                    <h3>Anel Pedra Retangular Branca</h3>
+                    <span class="price">R$ 179,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 4 - REF: 4977 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-nossa-senhora-redondo-cravejado-1737574495.9523.jpg" alt="Anel Nossa Senhora Redondo Cravejado" onclick="openProductModal('4977', 'Anel Nossa Senhora Redondo Cravejado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-nossa-senhora-redondo-cravejado-1737574495.9523.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel Nossa Senhora Redondo Cravejado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-nossa-senhora-redondo-cravejado-1737574495.9523.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="4977">
+                    <h3>Anel Nossa Senhora Redondo Cravejado</h3>
+                    <span class="price">R$ 199,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 5 - REF: 6306 (2 imagens - COM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <div class="img-carousel" id="carousel-6306">
+                        <div class="carousel-images">
+                            <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-de-letra-quadrado-texturizado-a-h-1747251343.6615.jpg" alt="Anel Letra Quadrado Texturizado" onclick="openImageLightboxDirect(this.src)">
+                        </div>
+                        <button class="carousel-nav prev" onclick="moveCarousel('carousel-6306', -1)">‹</button>
+                        <button class="carousel-nav next" onclick="moveCarousel('carousel-6306', 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <button class="btn-add-cart" onclick="addToCart('Anel Letra Quadrado Texturizado', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-de-letra-quadrado-texturizado-a-h-1747331599.3475.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="6306">
+                    <h3>Anel Letra Quadrado Texturizado</h3>
+                    <span class="price">R$ 179,90</span>
+                </div>
+            </div>
+
+            <!-- Produto 6 - REF: 6699 (1 imagem - SEM CARROSSEL) -->
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-laterias-lisas-1758284837.441.jpg" alt="Anel São Jorge Laterais Lisas" onclick="openProductModal('6699', 'Anel São Jorge Laterais Lisas', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-laterias-lisas-1758284837.441.jpg')">
+                    <button class="btn-add-cart" onclick="addToCart('Anel São Jorge Laterais Lisas', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/anel-quadrado-sao-jorge-laterias-lisas-1758284837.441.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info" id="6699">
+                    <h3>Anel São Jorge Laterais Lisas</h3>
+                    <span class="price">R$ 219,90</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Botão WhatsApp Flutuante -->
+        <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+            <img src="assents/zap.png" alt="WhatsApp">
+        </a>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ggold Joias. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggold | Correntes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+        
+        <nav class="desktop-nav">
+            <a href="correntes.html">Correntes </a>
+        <a href="colares.html">Colares </a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+            <div class="dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+            <div class="dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </nav>
+        
+        <div class="header-actions">
+            <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+        <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+        <a href="correntes.html">Correntes</a>
+        <a href="colares.html">Colares</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                <span>Pulseiras</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                <a href="pulseiras.html">Pulseiras Masculinas</a>
+                <a href="pulseirasFem.html">Pulseiras Femininas</a>
+            </div>
+        </div>
+         <a href="braceletes.html">Braceletes</a>
+        <a href="escapularios.html">Escapulários</a>
+        <a href="pingentes.html">Pingentes</a>
+        <a href="brincos.html">Brincos</a>
+        <div class="mobile-dropdown">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                <span>Anéis</span>
+                <span class="caret">▾</span>
+            </div>
+            <div id="aneis-mobile" class="mobile-dropdown-content">
+                <a href="aneisFem.html">Anéis Femininos</a>
+                <a href="aneisMasc.html">Anéis Masculinos</a>
+            </div>
+        </div>
+        <a href="tornozeleiras.html">Tornozeleiras</a>
+        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+    </div>
+
+    <section class="mini-hero">
+        <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+        <div class="hero-content">
+            <h1>GGOLD JOIAS</h1>
+            <p>Elegância em cada detalhe.</p>
+        </div>
+    </section>
+
+    <div class="page-header">
+        <h2>Colares</h2>
+        <p>Seleção exclusiva banhada a ouro 18k</p>
+    </div>
+
+    <section class="product-grid">
+        <!-- Produto 1 - REF: 2524 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2524">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-45cm-1709661140.5848.jpg" alt="Colar Veneziana 1.5mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-45cm-1709661141.456.jpg" alt="Colar Veneziana 1.5mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana 1.5mm', 79.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-45cm-1709661140.5848.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2524">
+                <h3>Colar Veneziana 1.5mm</h3>
+                <span class="price">R$ 79,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 2 - REF: 6212 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-1-5mm-1746466124.7862.jpg" alt="Colar Portugues 1.5mm" onclick="openProductModal('6212', 'Colar Portugues 1.5mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-1-5mm-1746466124.7862.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 1.5mm', 99.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-1-5mm-1746466124.7862.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6212">
+                <h3>Colar Portugues 1.5mm</h3>
+                <span class="price">R$ 99,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 3 - REF: 3172 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-com-pingente-e-ponto-de-luz-1759257501.2483.jpg" alt="Colar Pingente e Ponto de Luz" onclick="openProductModal('3172', 'Colar Pingente e Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-com-pingente-e-ponto-de-luz-1759257501.2483.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Pingente e Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-com-pingente-e-ponto-de-luz-1759257501.2483.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3172">
+                <h3>Colar Pingente e Ponto de Luz</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 4 - REF: 3115 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-ponto-de-luz-ouro-18k-1717598735.6442.jpg" alt="Colar Veneziana com Ponto de Luz" onclick="openProductModal('3115', 'Colar Veneziana com Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-ponto-de-luz-ouro-18k-1717598735.6442.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana com Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-ponto-de-luz-ouro-18k-1717598735.6442.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3115">
+                <h3>Colar Veneziana com Ponto de Luz</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 5 - REF: 1017 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-ponto-de-luz-1718813583.8508.jpg" alt="Colar Veneziana Ponto de Luz" onclick="openProductModal('1017', 'Colar Veneziana Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-ponto-de-luz-1718813583.8508.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana Ponto de Luz', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-ponto-de-luz-1718813583.8508.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1017">
+                <h3>Colar Veneziana Ponto de Luz</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 6 - REF: 4185 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-trancado-1-5mm-1718802042.5518.jpg" alt="Colar Trançado 1.5mm" onclick="openProductModal('4185', 'Colar Trançado 1.5mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-trancado-1-5mm-1718802042.5518.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Trançado 1.5mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-trancado-1-5mm-1718802042.5518.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4185">
+                <h3>Colar Trançado 1.5mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 7 - REF: 855 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-2mm-1718810765.8405.jpg" alt="Colar Portugues 2mm" onclick="openProductModal('855', 'Colar Portugues 2mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-2mm-1718810765.8405.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 2mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-2mm-1718810765.8405.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="855">
+                <h3>Colar Portugues 2mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 8 - REF: 4017 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-2mm-45cm-1718806185.9564.jpg" alt="Colar Cordão Baiano 2mm" onclick="openProductModal('4017', 'Colar Cordão Baiano 2mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-2mm-45cm-1718806185.9564.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cordão Baiano 2mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-2mm-45cm-1718806185.9564.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4017">
+                <h3>Colar Cordão Baiano 2mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 9 - REF: 5709 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-2mm-50cm-ouro-18k-1738170390.3932.jpg" alt="Colar Grumet Dupla 2mm" onclick="openProductModal('5709', 'Colar Grumet Dupla 2mm', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-2mm-50cm-ouro-18k-1738170390.3932.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet Dupla 2mm', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-2mm-50cm-ouro-18k-1738170390.3932.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5709">
+                <h3>Colar Grumet Dupla 2mm</h3>
+                <span class="price">R$ 149,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 10 - REF: 1348 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-3mm-1746465194.2318.jpg" alt="Colar Portugues 3mm" onclick="openProductModal('1348', 'Colar Portugues 3mm', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-3mm-1746465194.2318.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 3mm', 149.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-3mm-1746465194.2318.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1348">
+                <h3>Colar Portugues 3mm</h3>
+                <span class="price">R$ 149,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 11 - REF: 3726 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-snake-3mm-45cm-1759258120.7176.jpg" alt="Colar Snake 3mm" onclick="openProductModal('3726', 'Colar Snake 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-snake-3mm-45cm-1759258120.7176.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Snake 3mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-snake-3mm-45cm-1759258120.7176.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3726">
+                <h3>Colar Snake 3mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 12 - REF: 821 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-3mm-1696445964.2216.jpg" alt="Colar Cordão Baiano 3mm" onclick="openProductModal('821', 'Colar Cordão Baiano 3mm', 189.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-3mm-1696445964.2216.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cordão Baiano 3mm', 189.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-3mm-1696445964.2216.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="821">
+                <h3>Colar Cordão Baiano 3mm</h3>
+                <span class="price">R$ 189,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 13 - REF: 6224 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menina-cravejada-1744825884.5458.jpg" alt="Colar Veneziana c/ Pingente Menina Cravejada" onclick="openProductModal('6224', 'Colar Veneziana c/ Pingente Menina Cravejada', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menina-cravejada-1744825884.5458.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana c/ Pingente Menina Cravejada', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menina-cravejada-1744825884.5458.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6224">
+                <h3>Colar Veneziana c/ Pingente Menina Cravejada</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 14 - REF: 6225 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menino-cravejado-1744825928.5744.jpg" alt="Colar Veneziana c/ Pingente Menino Cravejado" onclick="openProductModal('6225', 'Colar Veneziana c/ Pingente Menino Cravejado', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menino-cravejado-1744825928.5744.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana c/ Pingente Menino Cravejado', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-pingente-menino-cravejado-1744825928.5744.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6225">
+                <h3>Colar Veneziana c/ Pingente Menino Cravejado</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 15 - REF: 4470 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-3mm-45cm-ouro-18k-1731433034.9701.png" alt="Colar Fita Laminada 3mm" onclick="openProductModal('4470', 'Colar Fita Laminada 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-3mm-45cm-ouro-18k-1731433034.9701.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Fita Laminada 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-3mm-45cm-ouro-18k-1731433034.9701.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4470">
+                <h3>Colar Fita Laminada 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 16 - REF: 177 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-6mm-ouro-18k-1731433670.3823.png" alt="Colar Snake 6mm" onclick="openProductModal('177', 'Colar Snake 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-6mm-ouro-18k-1731433670.3823.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Snake 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-6mm-ouro-18k-1731433670.3823.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="177">
+                <h3>Colar Snake 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 17 - REF: 1444 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-meia-corda-5mm-1718805761.9469.jpg" alt="Colar Meia Corda 5mm" onclick="openProductModal('1444', 'Colar Meia Corda 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-meia-corda-5mm-1718805761.9469.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Meia Corda 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-meia-corda-5mm-1718805761.9469.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1444">
+                <h3>Colar Meia Corda 5mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 18 - REF: 4407 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cardano-3mm-40cm-fecho-boia-ouro-18k-1717619496.429.jpg" alt="Colar Cardano 3mm" onclick="openProductModal('4407', 'Colar Cardano 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cardano-3mm-40cm-fecho-boia-ouro-18k-1717619496.429.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cardano 3mm', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cardano-3mm-40cm-fecho-boia-ouro-18k-1717619496.429.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4407">
+                <h3>Colar Cardano 3mm</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 19 - REF: 3908 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-5mm-ouro-18k-1738170631.008.jpg" alt="Colar Portugues 5mm" onclick="openProductModal('3908', 'Colar Portugues 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-5mm-ouro-18k-1738170631.008.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-5mm-ouro-18k-1738170631.008.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3908">
+                <h3>Colar Portugues 5mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 20 - REF: 6217 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-4mm-fecho-boia-1746465020.9912.jpg" alt="Colar Grumet 4mm" onclick="openProductModal('6217', 'Colar Grumet 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-4mm-fecho-boia-1746465020.9912.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet 4mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-4mm-fecho-boia-1746465020.9912.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="6217">
+                <h3>Colar Grumet 4mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 21 - REF: 1045 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---menino-cravejado-com-zirconias-1692902086.5047.jpg" alt="Colar Veneziana Coração e Menino Cravejado" onclick="openProductModal('1045', 'Colar Veneziana Coração e Menino Cravejado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---menino-cravejado-com-zirconias-1692902086.5047.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana Coração e Menino Cravejado', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---menino-cravejado-com-zirconias-1692902086.5047.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1045">
+                <h3>Colar Veneziana Coração e Menino Cravejado</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 22 - REF: 1412 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-pingente-coracao-e-menina-cravejada-com-zirconias-1710256803.1238.jpg" alt="Colar Veneziana Coração e Menina Cravejada" onclick="openProductModal('1412', 'Colar Veneziana Coração e Menina Cravejada', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-pingente-coracao-e-menina-cravejada-com-zirconias-1710256803.1238.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana Coração e Menina Cravejada', 179.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-pingente-coracao-e-menina-cravejada-com-zirconias-1710256803.1238.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1412">
+                <h3>Colar Veneziana Coração e Menina Cravejada</h3>
+                <span class="price">R$ 179,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 23 - REF: 603 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-union-6mm-ouro-18k-1731351812.6311.png" alt="Colar Grumet Union 6mm" onclick="openProductModal('603', 'Colar Grumet Union 6mm', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-union-6mm-ouro-18k-1731351812.6311.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet Union 6mm', 239.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-union-6mm-ouro-18k-1731351812.6311.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="603">
+                <h3>Colar Grumet Union 6mm</h3>
+                <span class="price">R$ 239,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 24 - REF: 3963 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-8mm-ouro-18k-1731436894.6257.png" alt="Colar Snake 8mm" onclick="openProductModal('3963', 'Colar Snake 8mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-8mm-ouro-18k-1731436894.6257.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Snake 8mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-8mm-ouro-18k-1731436894.6257.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3963">
+                <h3>Colar Snake 8mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 25 - REF: 5706 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-coracao-vazado-cravejado-e-casal-de-filhos-1738169481.5623.jpg" alt="Colar Veneziana Coração Vazado e Casal Filhos" onclick="openProductModal('5706', 'Colar Veneziana Coração Vazado e Casal Filhos', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-coracao-vazado-cravejado-e-casal-de-filhos-1738169481.5623.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana Coração Vazado e Casal Filhos', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-coracao-vazado-cravejado-e-casal-de-filhos-1738169481.5623.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="5706">
+                <h3>Colar Veneziana Coração Vazado e Casal Filhos</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 26 - REF: 4096 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-4096">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-canga-cravejada-casal-de-filhos-1712770894.9273.jpg" alt="Colar Veneziana com Canga Cravejada e Casal Filhos">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-canga-cravejada-casal-de-filhos-1712684807.9869.jpg" alt="Colar Veneziana com Canga Cravejada e Casal Filhos">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana com Canga Cravejada e Casal Filhos', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-com-canga-cravejada-casal-de-filhos-1712770894.9273.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4096">
+                <h3>Colar Veneziana com Canga Cravejada e Casal Filhos</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 27 - REF: 1036 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---2-filhos-a--cravejados-com-zirconias-1714137560.3494.jpg" alt="Colar Veneziana Coração Cravejado e Casal Filhos" onclick="openProductModal('1036', 'Colar Veneziana Coração Cravejado e Casal Filhos', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---2-filhos-a--cravejados-com-zirconias-1714137560.3494.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Veneziana Coração Cravejado e Casal Filhos', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-veneziana-coracao---2-filhos-a--cravejados-com-zirconias-1714137560.3494.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1036">
+                <h3>Colar Veneziana Coração Cravejado e Casal Filhos</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 28 - REF: 2437 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-6mm-com-fecho-boia-1718805976.4272.jpg" alt="Colar Portugues 6mm" onclick="openProductModal('2437', 'Colar Portugues 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-6mm-com-fecho-boia-1718805976.4272.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-6mm-com-fecho-boia-1718805976.4272.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2437">
+                <h3>Colar Portugues 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 29 - REF: 4674 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-flat-6mm-45cm-ouro-18k-1731434344.102.png" alt="Colar Grumet Flat 6mm" onclick="openProductModal('4674', 'Colar Grumet Flat 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-flat-6mm-45cm-ouro-18k-1731434344.102.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet Flat 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-flat-6mm-45cm-ouro-18k-1731434344.102.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4674">
+                <h3>Colar Grumet Flat 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 30 - REF: 951 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-5mm-1696446686.7211.jpg" alt="Colar Cordão Baiano 5mm" onclick="openProductModal('951', 'Colar Cordão Baiano 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-5mm-1696446686.7211.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cordão Baiano 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-5mm-1696446686.7211.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="951">
+                <h3>Colar Cordão Baiano 5mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 31 - REF: 4039 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-palmeira-6mm-fecho-boia-1718808508.8406.jpg" alt="Colar Palmeira 6mm" onclick="openProductModal('4039', 'Colar Palmeira 6mm', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-palmeira-6mm-fecho-boia-1718808508.8406.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Palmeira 6mm', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-palmeira-6mm-fecho-boia-1718808508.8406.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4039">
+                <h3>Colar Palmeira 6mm</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 32 - REF: 2877 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-8mm-fecho-boia-ouro-18k-1731352465.4316.png" alt="Colar Portugues 8mm" onclick="openProductModal('2877', 'Colar Portugues 8mm', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-8mm-fecho-boia-ouro-18k-1731352465.4316.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Portugues 8mm', 219.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-elo-portugues-8mm-fecho-boia-ouro-18k-1731352465.4316.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2877">
+                <h3>Colar Portugues 8mm</h3>
+                <span class="price">R$ 219,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 33 - REF: 3725 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-5mm-1768406093.7421.jpg" alt="Colar Fita Laminada 5mm" onclick="openProductModal('3725', 'Colar Fita Laminada 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-5mm-1768406093.7421.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Fita Laminada 5mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-fita-laminada-5mm-1768406093.7421.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3725">
+                <h3>Colar Fita Laminada 5mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 34 - REF: 2950 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-6mm-1696449843.1692.png" alt="Colar Cordão Baiano 6mm" onclick="openProductModal('2950', 'Colar Cordão Baiano 6mm', 249.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-6mm-1696449843.1692.png')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cordão Baiano 6mm', 249.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-6mm-1696449843.1692.png')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2950">
+                <h3>Colar Cordão Baiano 6mm</h3>
+                <span class="price">R$ 249,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 35 - REF: 1023 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-fita-laminada-6mm-1718801919.6806.jpg" alt="Colar Fita Laminada 6mm" onclick="openProductModal('1023', 'Colar Fita Laminada 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-fita-laminada-6mm-1718801919.6806.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Fita Laminada 6mm', 159.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-fita-laminada-6mm-1718801919.6806.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="1023">
+                <h3>Colar Fita Laminada 6mm</h3>
+                <span class="price">R$ 159,90</span>
+            </div>
+        </div>
+
+    
+
+        <!-- Produto 37 - REF: 2924 (2 imagens - CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <div class="img-carousel" id="carousel-2924">
+                    <div class="carousel-images">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-6mm-com-fecho-boia-1710257400.5723.jpg" alt="Colar Grumet Dupla 6mm">
+                        <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-6mm-com-fecho-boia-1710257403.4984.jpg" alt="Colar Grumet Dupla 6mm">
+                    </div>
+                    <button class="carousel-nav carousel-prev">‹</button>
+                    <button class="carousel-nav carousel-next">›</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet Dupla 6mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-dupla-6mm-com-fecho-boia-1710257400.5723.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2924">
+                <h3>Colar Grumet Dupla 6mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 38 - REF: 4258 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-pingente-medalha-sao-bento-com-zirconias-1768406120.6478.jpg" alt="Colar Pingente Medalha São Bento com Zircônias" onclick="openProductModal('4258', 'Colar Pingente Medalha São Bento com Zircônias', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-pingente-medalha-sao-bento-com-zirconias-1768406120.6478.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Pingente Medalha São Bento com Zircônias', 139.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-pingente-medalha-sao-bento-com-zirconias-1768406120.6478.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="4258">
+                <h3>Colar Pingente Medalha São Bento com Zircônias</h3>
+                <span class="price">R$ 139,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 39 - REF: 2214 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-9mm-fecho-gaveta-duplo-45cm-1709660815.1906.jpg" alt="Colar Grumet 9mm" onclick="openProductModal('2214', 'Colar Grumet 9mm', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-9mm-fecho-gaveta-duplo-45cm-1709660815.1906.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Grumet 9mm', 229.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-grumet-9mm-fecho-gaveta-duplo-45cm-1709660815.1906.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="2214">
+                <h3>Colar Grumet 9mm</h3>
+                <span class="price">R$ 229,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 40 - REF: 3046 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-bali-7mm-com-fecho-boia-1710257224.4763.jpg" alt="Colar Bali 7mm" onclick="openProductModal('3046', 'Colar Bali 7mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-bali-7mm-com-fecho-boia-1710257224.4763.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Bali 7mm', 199.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-bali-7mm-com-fecho-boia-1710257224.4763.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3046">
+                <h3>Colar Bali 7mm</h3>
+                <span class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 41 - REF: 3813 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-4mm---40cm-1712770260.2901.jpg" alt="Colar Cordão Baiano 4mm" onclick="openProductModal('3813', 'Colar Cordão Baiano 4mm', 169.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-4mm---40cm-1712770260.2901.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Cordão Baiano 4mm', 169.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-cordao-baiano-4mm---40cm-1712770260.2901.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3813">
+                <h3>Colar Cordão Baiano 4mm</h3>
+                <span class="price">R$ 169,90</span>
+            </div>
+        </div>
+
+        <!-- Produto 42 - REF: 3239 (1 imagem - SEM CARROSSEL) -->
+        <div class="product-card">
+            <div class="img-container-black">
+                <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-3mm-1718806717.7285.jpg" alt="Colar Choker Snake 3mm" onclick="openProductModal('3239', 'Colar Choker Snake 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-3mm-1718806717.7285.jpg')">
+                <button class="btn-add-cart" onclick="addToCart('Colar Choker Snake 3mm', 119.90, 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/colar-choker-snake-3mm-1718806717.7285.jpg')">Adicionar</button>
+            </div>
+            <div class="product-info" id="3239">
+                <h3>Colar Choker Snake 3mm</h3>
+                <span class="price">R$ 119,90</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+        <img src="assents/zap.png" alt="WhatsApp">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>
+                    <strong>Instagram:</strong>
+                    <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                </p>
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Ggold Joias. </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

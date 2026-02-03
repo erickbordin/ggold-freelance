@@ -1,0 +1,194 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ggold | Brincos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assents/IMG_0458.PNG">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+
+            <div class="logo"><a href="index.html"><img src="assents/IMG_0458.PNG" alt="Ggold"></a></div>
+            
+            <nav class="desktop-nav">
+                <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Pulseiras</button>
+                <div class="dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" onclick="toggleDesktopDropdown(this)">Anéis</button>
+                <div class="dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div style="position:relative; cursor:pointer;" onclick="openCart()">
+                    <i class="ph ph-shopping-bag"></i><span id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+            <a href="javascript:void(0)" onclick="toggleMenu()" style="position:absolute; top:20px; right:20px; font-size:2rem;">&times;</a>
+            <a href="correntes.html">Correntes</a>
+            <a href="colares.html">Colares</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('pulseiras-mobile', this)">
+                    <span>Pulseiras</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="pulseiras-mobile" class="mobile-dropdown-content">
+                    <a href="pulseiras.html">Pulseiras Masculinas</a>
+                    <a href="pulseirasFem.html">Pulseiras Femininas</a>
+                </div>
+            </div>
+            <a href="braceletes.html">Braceletes</a>
+            <a href="escapularios.html">Escapulários</a>
+            <a href="pingentes.html">Pingentes</a>
+            <a href="brincos.html">Brincos</a>
+            <div class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown('aneis-mobile', this)">
+                    <span>Anéis</span>
+                    <span class="caret">▾</span>
+                </div>
+                <div id="aneis-mobile" class="mobile-dropdown-content">
+                    <a href="aneisFem.html">Anéis Femininos</a>
+                    <a href="aneisMasc.html">Anéis Masculinos</a>
+                </div>
+            </div>
+            <a href="tornozeleiras.html">Tornozeleiras</a>
+            <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+        </div>
+
+        <section class="mini-hero">
+            <img src="assents/IMG_1398.jpg" alt="Background" class="hero-bg-img">
+            <div class="hero-content">
+                <h1>GGOLD JOIAS</h1>
+                <p>Elegância em cada detalhe.</p>
+            </div>
+        </section>
+
+        <div class="page-header"><h2>Tornozeleiras</h2><p>Detalhes que iluminam</p></div>
+
+        <section class="product-grid">
+         
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-buzios-com-zirconias-1694532671.9486.jpg" alt="TORNOZELEIRA BUZIOS COM ZIRCONIAS" onclick="openProductModal('TORNOZELEIRA BUZIOS COM ZIRCONIAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-buzios-com-zirconias-1694532671.9486.jpg', 366)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA BUZIOS COM ZIRCONIAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-buzios-com-zirconias-1694532671.9486.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA BUZIOS COM ZIRCONIAS</h3>
+                    <p class="product-price">R$ 99,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-mini-coracoes-1694534858.943.jpg" alt="TORNOZELEIRA MINI CORAÇÕES" onclick="openProductModal('TORNOZELEIRA MINI CORAÇÕES', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-mini-coracoes-1694534858.943.jpg', 357)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA MINI CORAÇÕES', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-mini-coracoes-1694534858.943.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA MINI CORAÇÕES</h3>
+                    <p class="product-price">R$ 99,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-snake-4mm-1700568238.8527.jpg" alt="TORNOZELEIRA SNAKE 4mm" onclick="openProductModal('TORNOZELEIRA SNAKE 4mm', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-snake-4mm-1700568238.8527.jpg', 3408)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA SNAKE 4mm', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-snake-4mm-1700568238.8527.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA SNAKE 4mm</h3>
+                    <p class="product-price">R$ 99,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-bolinhas-e-3-zirconias--1700588929.4637.jpg" alt="TORNOZELEIRA BOLINHAS E 3 ZIRCONIAS" onclick="openProductModal('TORNOZELEIRA BOLINHAS E 3 ZIRCONIAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-bolinhas-e-3-zirconias--1700588929.4637.jpg', 3413)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA BOLINHAS E 3 ZIRCONIAS', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-com-bolinhas-e-3-zirconias--1700588929.4637.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA BOLINHAS E 3 ZIRCONIAS</h3>
+                    <p class="product-price">R$ 99,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-cordao-baiano-3mm-ouro-18k-1717600036.5808.jpg" alt="TORNOZELEIRA CORDAO BAIANO 3mm" onclick="openProductModal('TORNOZELEIRA CORDAO BAIANO 3mm', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-cordao-baiano-3mm-ouro-18k-1717600036.5808.jpg', 3719)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA CORDAO BAIANO 3mm', 'R$ 99,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-cordao-baiano-3mm-ouro-18k-1717600036.5808.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA CORDAO BAIANO 3mm</h3>
+                    <p class="product-price">R$ 99,90</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container-black">
+                    <img src="https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-riviera-zirconias-cristais-3mm-1738164054.3253.jpg" alt="TORNOZELEIRA RIVIERA COM ZIRCONIAS 3mm" onclick="openProductModal('TORNOZELEIRA RIVIERA COM ZIRCONIAS 3mm', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-riviera-zirconias-cristais-3mm-1738164054.3253.jpg', 5104)">
+                    <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('TORNOZELEIRA RIVIERA COM ZIRCONIAS 3mm', 'R$ 109,90', 'https://dpaulinesemijoias.bwimg.com.br/dpaulinesemijoias/produtos/tornozeleira-riviera-zirconias-cristais-3mm-1738164054.3253.jpg')">Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>TORNOZELEIRA RIVIERA COM ZIRCONIAS 3mm</h3>
+                    <p class="product-price">R$ 109,90</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Botão WhatsApp Flutuante -->
+        <a href="https://wa.me/5551994273111" target="_blank" class="whatsapp-button">
+            <img src="assents/zap.png" alt="WhatsApp">
+        </a>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/ggold_joias" target="_blank">@ggold_joias</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5551994273111" target="_blank">+55 51 99427-3111</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:ggoldjoias18k@gmail.com" target="_blank">ggoldjoias18k@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ggold Joias. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
