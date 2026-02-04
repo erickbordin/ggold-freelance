@@ -42,7 +42,18 @@ function toggleMobileDropdown(dropdownId, toggleEl) {
 
 // 3. Carrinho
 function addToCart(name, price, image) {
-    const product = { id: Date.now(), name, price, image };
+    // Converter price para número (pode estar como string "R$ 123,90" ou número)
+    let numPrice = price;
+    if (typeof price === 'string') {
+        // Parse manual: remover caracteres não numéricos e converter
+        const cleaned = price.replace(/[^\d,.-]/g, '').replace(',', '.');
+        numPrice = parseFloat(cleaned);
+        if (isNaN(numPrice)) numPrice = 0;
+    } else {
+        numPrice = typeof price === 'number' ? price : 0;
+    }
+    
+    const product = { id: Date.now(), name, price: numPrice, image };
     cart.push(product);
     localStorage.setItem('ggoldCart', JSON.stringify(cart));
     updateCartCount();
@@ -112,7 +123,17 @@ function checkoutWhatsApp() {
         message += `- ${item.name}: R$ ${item.price.toFixed(2).replace('.', ',')}\n`;
         total += item.price;
     });
-    message += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
+    
+    // Calcular valores
+    const totalPixValue = total * 0.90; // 10% de desconto no PIX
+    const installmentValue = (total / 6).toFixed(2).replace('.', ',');
+    const totalFormatted = total.toFixed(2).replace('.', ',');
+    const totalPixFormatted = totalPixValue.toFixed(2).replace('.', ',');
+    
+    message += `\n*TOTAL: R$ ${totalFormatted}*`;
+    message += `\n\n💰 *Opções de Pagamento:*`;
+    message += `\n• PIX (10% desconto): R$ ${totalPixFormatted}`;
+    message += `\n• Parcelado s/ juros: 6x de R$ ${installmentValue}`;
     
     const phoneNumber = "5551994273111"; 
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
@@ -222,10 +243,13 @@ function openProductModal(img) {
     const carousel = card.querySelector('.img-carousel');
     const modalCarouselContainer = document.getElementById('product-modal-carousel-container');
     
+    let imagesSrc = null;
+    let imageSrc = null;
+    
     if (carousel) {
         // Produto tem múltiplas imagens - criar carrossel no modal
         const images = carousel.querySelectorAll('.carousel-images img');
-        const imagesSrc = Array.from(images).map(img => img.src);
+        imagesSrc = Array.from(images).map(img => img.src);
         
         let carouselHTML = `
             <div class="img-carousel" id="modal-carousel">
@@ -258,8 +282,8 @@ function openProductModal(img) {
         }, 100);
     } else {
         // Produto tem apenas 1 imagem
-        const image = img.getAttribute('src');
-        modalCarouselContainer.innerHTML = `<img id="product-modal-image" src="${image}" alt="${title}" style="cursor: zoom-in;">`;
+        imageSrc = img.getAttribute('src');
+        modalCarouselContainer.innerHTML = `<img id="product-modal-image" src="${imageSrc}" alt="${title}" style="cursor: zoom-in;">`;
         
         // Adicionar evento de clique na imagem do modal após inserir no DOM
         setTimeout(() => {
@@ -284,7 +308,8 @@ function openProductModal(img) {
     const addBtn = document.getElementById('product-modal-add');
     addBtn.onclick = () => {
         closeProductModal();
-        addToCart(title, price, imagesSrc ? imagesSrc[0] : image);
+        const finalImage = imagesSrc ? imagesSrc[0] : imageSrc;
+        addToCart(title, price, finalImage);
     };
 
     modal.classList.add('active');
